@@ -1,7 +1,17 @@
+/* ------------------ NAVBAR STYLING -------------------- */
+.nav {
+  display: flex;
+  background-color: rgb(161, 219, 138);
+  justify-content: space-evenly;
+  list-style:none;
+  font-family: 'Armata', sans-serif;
+  font-size: 25px;
+}
+/* ------------------ NAVBAR STYLING -------------------- */
+
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
