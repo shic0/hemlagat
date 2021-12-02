@@ -7,7 +7,8 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.15",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "stripe": "^8.191.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/shic0/hemlagat.git"
   },
-  "author": "Sherin Valestrand, Kanan Garaisayev,Ryan Cornelio",
+  "author": "Sherin Valestrand, Kanan Garaisayev, Ryan Cornelio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shic0/hemlagat/issues"
