@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import logo from "./logo.svg";
 import "./App.css";
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
@@ -9,19 +9,23 @@ import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
 import GoodsList from './components/GoodsList.js'
 import Search from './components/Search.js'
+import Basket from './components/Basket.js'
+import Snack from './components/Snack.js'
 import { goods } from './data/goods'
 import { Container } from '@material-ui/core'
 
+
 function App() {
-  const [data, setData] = React.useState(null);
-  const [products, setProducts] = useState(goods);
-  const [search, setSearch] = useState('');
+  /* const [data, setData] = React.useState(null); */
+  
   const [order, setOrder] = useState([]);
-  const [isSnackOpen, setSnackOpen] = useState(false);
+  const [search, setSearch] = useState('');
+  const [products, setProducts] = useState(goods);
   const [isCartOpen, setCartOpen] = useState(false);
+  const [isSnackOpen, setSnackOpen] = useState(false);
 
 
-  console.log(products)
+  //console.log(products)
   
   const handleChange = (e) => {
     if (!e.target.value) {
@@ -53,7 +57,7 @@ const addToOrder = (goodsItem) => {
               return {
                   id: item.id,
                   name: item.name,
-                  description: goodsItem.description,
+                  description: item.description,
                   price: item.price,
                   quantity,
               };
@@ -81,18 +85,20 @@ const removeFromOrder = (goodsItem) => {
 };
   
 
-  React.useEffect(() => {
+/*   React.useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
       .then((data) => setData(data.message));
-  }, []);
+  }, []); */
 
   return (
     <>
-    
     <Router>
       <div className="App">
-        <Header />
+        <Header 
+          handleCart={() => setCartOpen(true)}
+          orderLen={order.length}
+        />
         <div>
       <Container
             sx={{
@@ -102,8 +108,22 @@ const removeFromOrder = (goodsItem) => {
             <Search
                 value={search}
                 onChange={handleChange}
-        />
+            />
+            <GoodsList
+                goods={products}
+                setOrder={addToOrder}
+            />
       </Container>
+      <Basket
+            order={order}
+            removeFromOrder={removeFromOrder}
+            cartOpen={isCartOpen}
+            closeCart={() => setCartOpen(false)}
+        />
+        <Snack
+            isOpen={isSnackOpen}
+            handleClose={() => setSnackOpen(false)}
+        />
       </div>
         <Switch>
           <Route component={StartPage} path='/' exact />
@@ -111,10 +131,10 @@ const removeFromOrder = (goodsItem) => {
           <Route component={Contact} path='/contact' />
           <Redirect to='/' />
         </Switch>
-        <div className="App-header">
+        {/* <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1>{!data ? "Loading..." : data}</h1>
-        </div>
+        </div> */}
       </div>
 
       <Footer />
