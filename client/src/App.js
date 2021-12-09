@@ -4,7 +4,6 @@ import "./App.css";
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import Header from './components/Header.js'
 import AboutPage from './components/AboutPage.js'
-import Store from './components/Store.js'
 import Contact from './components/Contact.js'
 import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
@@ -103,13 +102,11 @@ const removeFromOrder = (goodsItem) => {
             <Search
                 value={search}
                 onChange={handleChange}
-            />
+        />
       </Container>
       </div>
-      
         <Switch>
           <Route component={StartPage} path='/' exact />
-          <Route component={Store} path='/store' />
           <Route component={AboutPage} path='/about' />
           <Route component={Contact} path='/contact' />
           <Redirect to='/' />
