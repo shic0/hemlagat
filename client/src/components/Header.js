@@ -20,6 +20,7 @@ export default function Header ({handleCart, orderLen}) {
         
         <div className='nav'>
             <a href='#/'>Start-Sida</a>
+            <a href='#/store'>Handla</a>
             <a href='#/contact'>Kontakt</a>
             <a href='#/about'>Om oss</a>
         </div>
