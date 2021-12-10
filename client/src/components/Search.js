@@ -4,7 +4,7 @@ const Search = (props) => {
     const { onChange, value } = props;
 
     return <TextField
-        label='search'
+        label='Sök här din favorit mat'
         variant="standard"
         fullWidth
         type='search'
