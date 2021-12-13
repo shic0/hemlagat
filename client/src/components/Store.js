@@ -6,18 +6,28 @@ import Snack from './Snack.js'
 import { goods } from '../data/goods'
 import { Container } from '@material-ui/core'
 import BasketIcon from './BasketIcon.js'
+import { useLocalStorage } from './useLocalStorage.js'
+
 
 const Store = () => {
-  const [data, setData] = useState(null)
+const [data, setData] = useState(useLocalStorage('order', []));
 
-  const [order, setOrder] = useState([]);
+const [order, setOrder] = useState(()=>{
+  const saved = localStorage.getItem('orders');
+  const initialValue = JSON.parse(saved);
+  return initialValue || [];
+}, [])
   const [search, setSearch] = useState('');
   const [products, setProducts] = useState(goods);
   const [isCartOpen, setCartOpen] = useState(false);
   const [isSnackOpen, setSnackOpen] = useState(false);
+  
+  
+useEffect(() => {
+localStorage.setItem('orders', JSON.stringify(order))
+}, [order]);
 
-
-  const handleChange = (e) => {
+const handleChange = (e) => {
     if (!e.target.value) {
         setProducts(goods);
         setSearch('');

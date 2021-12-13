@@ -1,14 +1,12 @@
 import React from 'react'
-import { AppBar, Badge, IconButton, Toolbar, Typography } from "@material-ui/core"
-import { ShoppingBasket } from "@material-ui/icons"
+import { AppBar, Toolbar, Typography } from "@material-ui/core"
 
-export default function Header ({handleCart, orderLen}) {
+export default function Header () {
 
   return (
       <>
 <AppBar position="static">
     <Toolbar>
-
 
         <Typography
             variant="h5"
@@ -24,21 +22,6 @@ export default function Header ({handleCart, orderLen}) {
             <a href='#/contact'>Kontakt</a>
             <a href='#/about'>Om oss</a>
         </div>
-        <IconButton
-            color="inherit"
-            onClick={handleCart}
-            >
-            <Badge
-                color="secondary"
-                badgeContent={orderLen}
-                >
-                
-                <ShoppingBasket />
-            </Badge>
-        </IconButton>
-
-
-
     </Toolbar>
     
 </AppBar>
