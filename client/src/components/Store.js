@@ -3,29 +3,45 @@ import GoodsList from './GoodsList.js'
 import Search from './Search.js'
 import Basket from './Basket.js'
 import Snack from './Snack.js'
-import { goods } from '../data/goods'
 import { Container } from '@material-ui/core'
 import BasketIcon from './BasketIcon.js'
 import { useLocalStorage } from './useLocalStorage.js'
 
 
 const Store = () => {
-const [data, setData] = useState(useLocalStorage('order', []));
+const [data, setData] = useLocalStorage('test', ''); //demo test
 
 const [order, setOrder] = useState(()=>{
   const saved = localStorage.getItem('orders');
   const initialValue = JSON.parse(saved);
   return initialValue || [];
 }, [])
-  const [search, setSearch] = useState('');
-  const [products, setProducts] = useState(goods);
-  const [isCartOpen, setCartOpen] = useState(false);
-  const [isSnackOpen, setSnackOpen] = useState(false);
-  
+const [search, setSearch] = useState('');
+const [isCartOpen, setCartOpen] = useState(false);
+const [isSnackOpen, setSnackOpen] = useState(false);
+const [goods, setGoods] = useState([])
+const [products, setProducts] = useState(goods)
   
 useEffect(() => {
 localStorage.setItem('orders', JSON.stringify(order))
 }, [order]);
+
+useEffect(() => {
+  fetch("/product")
+    .then((res) => res.json())
+    .then((products) => {
+      setGoods(products.goods)
+      setProducts(products.goods)
+
+      //console.log('fetch goods API', products.goods)
+
+    })
+    .catch(console.error)
+  }, [])
+
+//console.log('products', products)
+//console.log('goods', goods)
+
 
 const handleChange = (e) => {
     if (!e.target.value) {
@@ -33,10 +49,9 @@ const handleChange = (e) => {
         setSearch('');
         return;
     }
-
     setSearch(e.target.value);
     setProducts(
-        products.filter((good) =>
+        goods.filter((good) =>
             good.name.toLowerCase().includes(e.target.value.toLowerCase())
         ))
 };
@@ -88,7 +103,7 @@ const removeFromOrder = (goodsItem) => {
     fetch("/api")
       .then((res) => res.json())
       .then((data) => setData(data.message));
-  }, []);
+  }, [setData]);
 
   return (
     <>
