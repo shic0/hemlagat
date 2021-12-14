@@ -1,0 +1,9 @@
+.main-footer {
+  color: black;
+  background-color: #61dafb;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  flex-direction: row;
+}

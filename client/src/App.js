@@ -13,7 +13,8 @@ function App() {
   return (
     <>
     <Router>
-      <div className="App">
+      <div className="page-container">
+      <div className="content-wrap">
         <Header />
         <Switch>
           <Route component={StartPage} path='/' exact />
@@ -24,6 +25,7 @@ function App() {
         </Switch>
       </div>
       <Footer />
+      </div>
     </Router>
     </>
   );

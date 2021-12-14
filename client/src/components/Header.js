@@ -1,13 +1,14 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography } from "@material-ui/core"
+import logo from '../img/logo.png'
 
 export default function Header () {
-
+    console.log(logo);
   return (
       <>
 <AppBar position="static">
     <Toolbar>
-
+    <img className='logo' src={logo} alt="Logo"/>
         <Typography
             variant="h5"
             component="span"

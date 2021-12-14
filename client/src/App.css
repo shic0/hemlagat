@@ -2,7 +2,7 @@
 .nav {
   display: flex;
   justify-content: space-evenly;
-  font-family: 'Armata', sans-serif;
+  font-family: "Armata", sans-serif;
   font-size: 17px;
   width: 100%;
 }
