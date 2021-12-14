@@ -9,7 +9,6 @@ const Basket = (props) => {
         order = [],
         removeFromOrder
     } = props;
-    console.log(order)
     return (
         <Drawer
             anchor="right"
