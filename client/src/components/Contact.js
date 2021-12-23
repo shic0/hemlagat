@@ -6,8 +6,8 @@ const Store = () => {
   return (
     <>
       <h2>Kontakt</h2>
-      <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, modi!</h4>
-      <button className='button is-primary' onClick={() => history.push('/')}>Back to START</button>
+      <p>Har ni några frågor eller funderingar så är ni välkomna att kontakta oss.</p>
+      <button className='button is-primary' onClick={() => history.push('/')}>Tillbaka till startsidan.</button>
     </>
   )
 }

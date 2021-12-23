@@ -5,9 +5,11 @@ const AboutPage = () => {
   const history = useHistory()
   return (
     <>
-      <h2>About</h2>
-      <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, modi!</h4>
-      <button className='button is-primary' onClick={() => history.push('/')}>Back to START</button>
+      <h2>Om oss</h2>
+      <p>Hej! Vi är en grupp av 3 elever som studerar på skolan MedieInstitutet i Göteborg. Denna sida är vårt examensarbete och en chans att visa vad vi har lärt oss under kursen.
+        Vår ide med denna tjänst är just svensk husmanskost där vi erbjuder hemleverans. 
+         </p>
+      <button className='button is-primary' onClick={() => history.push('/')}>Tillbaka till startsidan.</button>
     </>
   )
 }
