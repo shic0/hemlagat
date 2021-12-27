@@ -12,6 +12,8 @@
 
 Sprint 1
 13/12-2021 3/1-2021 Förbereda en back-log med plan.
+27/12-2021: Vi har en back-log som är tillräcklig just nu. Det finns såklart utrymme för att lägga till mer. 
+Påbörjar att lägga till login formulär på sidan. -Ryan
 
 Sprint 2
 4/1-2021 17/1-2021 Genomförande av back-log.
