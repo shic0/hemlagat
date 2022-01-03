@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {ThemeProvider, createTheme} from '@material-ui/core';
-
+import {ThemeProvider, createTheme} from '@material-ui/core'
 import './index.css';
 import App from './App';
 
@@ -16,11 +15,17 @@ const theme = createTheme({
   }
 });
 
-ReactDOM.render(
+function Main () {
+  return (
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>,
+      <ThemeProvider theme={theme}>
+          <App />
+      </ThemeProvider>
+  </React.StrictMode>
+  )
+}
+
+ReactDOM.render(
+  <Main />,
   document.getElementById('root')
 );

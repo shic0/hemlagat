@@ -1,6 +1,8 @@
 import { Divider, Drawer, List, ListItem, ListItemIcon, ListItemText, Typography, Button } from "@material-ui/core";
 import { ShoppingBasket } from "@material-ui/icons";
 import BasketItem from "./BasketItem";
+import { Link } from 'react-router-dom';
+
 
 const Basket = (props) => {
     const {
@@ -36,15 +38,16 @@ const Basket = (props) => {
                         <Typography sx={{fontWeight: 700}}>
                             Totalt summan:{' '}
                             {order.reduce((acc, item) => {
-                            return acc + item.price * item.quantity;
+                            return acc + 39 + item.price * item.quantity;
                             }, 0)}{' '}
-                            SEK 
+                            SEK
                         </Typography>
-                        <Typography>
-                            {' + hemleverans frakt 39SEK'}
+                        <Typography sx={{color: 'rgb(62, 91, 134)'}}>
+                        (med hemlevens avgift av 39 SEK)
                         </Typography>
                     </ListItem>
                         <Button variant="contained" sx={{ml: '1rem'}} 
+                        component={Link} to="/checkout"
                         onClick={() => {
                             alert('Dän sidan ska vidare till Stripe eller Klarna');
                         }}>Till betalningen</Button>
