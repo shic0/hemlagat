@@ -1,9 +1,10 @@
 import React from 'react'
-import { AppBar, Toolbar } from "@material-ui/core"
+import { AppBar, Toolbar, Container } from "@material-ui/core"
 import logo from '../img/logo.png'
 
 const  Header = () => {
   return (
+    <Container sx={{ mt: '1rem' }}>
         <AppBar position="static">
             <Toolbar>
                 <img className='logo' src={logo} alt="Logo" />
@@ -15,6 +16,8 @@ const  Header = () => {
                 </div>
             </Toolbar>
         </AppBar>
+    </Container>
+
   )
 }
 export default Header;

@@ -1,6 +1,8 @@
 import { Divider, Drawer, List, ListItem, ListItemIcon, ListItemText, Typography, Button } from "@material-ui/core";
 import { ShoppingBasket } from "@material-ui/icons";
 import BasketItem from "./BasketItem";
+import { Link } from 'react-router-dom';
+
 
 const Basket = (props) => {
     const {
@@ -45,6 +47,7 @@ const Basket = (props) => {
                         </Typography>
                     </ListItem>
                         <Button variant="contained" sx={{ml: '1rem'}} 
+                        component={Link} to="/checkout"
                         onClick={() => {
                             alert('Dän sidan ska vidare till Stripe eller Klarna');
                         }}>Till betalningen</Button>

@@ -14,7 +14,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "test",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "build": "cd client && npm install && npm run build"
   },
   "engines": {
