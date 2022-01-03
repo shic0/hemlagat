@@ -7,6 +7,7 @@ import Contact from './components/Contact.js'
 import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
 import Store from './components/Store.js'
+import Login from './components/login';
 
 
 function App() {
@@ -20,8 +21,10 @@ function App() {
           <Route component={AboutPage} path='/about' />
           <Route component={Contact} path='/contact' />
           <Route component={Store} path='/store' />
+          <Route component={Login} path='/login' />
           <Redirect to='/' />
         </Switch>
+        
       </div>
       <Footer />
     </Router>

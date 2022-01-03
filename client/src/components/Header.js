@@ -22,6 +22,7 @@ export default function Header () {
             <a href='#/store'>Handla</a>
             <a href='#/contact'>Kontakt</a>
             <a href='#/about'>Om oss</a>
+            <a href='#/login'>Logga in</a>
         </div>
     </Toolbar>
     
