@@ -7,6 +7,7 @@ import Contact from './components/Contact.js'
 import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
 import Store from './components/Store.js'
+import Checkout from './components/checkout/Checkout.js'
 
 
 function App() {
@@ -19,7 +20,10 @@ function App() {
           <Route component={StartPage} path='/' exact />
           <Route component={AboutPage} path='/about' />
           <Route component={Contact} path='/contact' />
-          <Route component={Store} path='/store' />
+          <Route path='/store'>
+              <Store />
+          </Route>
+          <Route path='/checkout'><Checkout /></Route>
           <Redirect to='/' />
         </Switch>
       </div>

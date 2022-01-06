@@ -32,7 +32,7 @@ const GoodsItem = (props) => {
                 </CardContent>
                 <CardActions>
                     <Button
-                        variant="text"
+                        variant="outlined"
                         onClick={() =>
                             setOrder({
                                 id: props.id,

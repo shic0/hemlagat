@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Container } from "@material-ui/core";
 
 
 const StartPage = () => {
@@ -12,11 +13,13 @@ const StartPage = () => {
 
   return (
     <>
+    <Container>
       <h2>Body borjar här</h2>
       <h4>Some text</h4>
       <div className="App-header">
           <h1>{!data ? "Loading..." : data}</h1>
-        </div>
+      </div>
+    </Container>
     </>
   )
 }

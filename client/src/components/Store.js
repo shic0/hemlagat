@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext, createContext } from 'react'
 import GoodsList from './GoodsList.js'
 import Search from './Search.js'
 import Basket from './Basket.js'
@@ -6,7 +6,8 @@ import Snack from './Snack.js'
 import { Container } from '@material-ui/core'
 import BasketIcon from './BasketIcon.js'
 import { useLocalStorage } from './useLocalStorage.js'
-
+import Checkout from './checkout/Checkout.js'
+import OrderContext from './Context.js'
 
 const Store = () => {
 const [data, setData] = useLocalStorage('test', ''); //demo test
@@ -21,7 +22,7 @@ const [isCartOpen, setCartOpen] = useState(false);
 const [isSnackOpen, setSnackOpen] = useState(false);
 const [goods, setGoods] = useState([])
 const [products, setProducts] = useState(goods)
-  
+
 useEffect(() => {
 localStorage.setItem('orders', JSON.stringify(order))
 }, [order]);
@@ -32,9 +33,7 @@ useEffect(() => {
     .then((products) => {
       setGoods(products.goods)
       setProducts(products.goods)
-
       //console.log('fetch goods API', products.goods)
-
     })
     .catch(console.error)
   }, [])
@@ -80,54 +79,54 @@ const addToOrder = (goodsItem) => {
       );
   } else {
       setOrder([
-              ...order,
-              {
-                  id: goodsItem.id,
-                  name: goodsItem.name,
-                  description: goodsItem.description,
-                  price: goodsItem.price,
-                  quantity,
-              },
-          ],
+        ...order,
+        {
+          id: goodsItem.id,
+          name: goodsItem.name,
+          description: goodsItem.description,
+          price: goodsItem.price,
+          quantity,
+        },
+      ],
       );
-  }
-
-  setSnackOpen(true);
-};
-
-const removeFromOrder = (goodsItem) => {
-  setOrder(order.filter((item) => item.id !== goodsItem));
-};
-
+    }
+    
+    setSnackOpen(true);
+  };
+  
+  const removeFromOrder = (goodsItem) => {
+    setOrder(order.filter((item) => item.id !== goodsItem));
+  };
+  
   useEffect(() => {
     fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
+    .then((res) => res.json())
+    .then((data) => setData(data.message));
   }, [setData]);
-
+  
+ 
   return (
-    <>
-      <h2>MARKET</h2>
-      <h4>köp sidan</h4>
-      <p>{!data ? "Loading..." : data}</p>
-      <BasketIcon 
-          handleCart={() => setCartOpen(true)}
-          orderLen={order.length}
-        />
-       
-      <div>
-      <Container
-            sx={{
-                mt: '1rem'
-            }}
-        >
-            <Search
-                value={search}
-                onChange={handleChange}
+    <>              
+      <Container sx={{ mt: '1rem' }}>
+        <OrderContext.Provider value={'null'}>
+        <Checkout  
+          goods={goods}
+          data={true}
+          />
+          </OrderContext.Provider>
+        <BasketIcon 
+            handleCart={() => setCartOpen(true)}
+            orderLen={order.length}
+            style={{margin: "10rem"}}
             />
-            <GoodsList
-                goods={products}
-                setOrder={addToOrder}
+          <code>{!data ? "Loading..." : data}</code>
+        <Search
+            value={search}
+            onChange={handleChange}
+            />
+        <GoodsList
+            goods={products}
+            setOrder={addToOrder}
             />
       </Container>
       <Basket
@@ -135,13 +134,12 @@ const removeFromOrder = (goodsItem) => {
             removeFromOrder={removeFromOrder}
             cartOpen={isCartOpen}
             closeCart={() => setCartOpen(false)}
-        />
-        <Snack
-            isOpen={isSnackOpen}
-            handleClose={() => setSnackOpen(false)}
-        />
-      </div>
-    </>
+            />
+      <Snack
+          isOpen={isSnackOpen}
+          handleClose={() => setSnackOpen(false)}
+          />
+      </>
   )
 }
 
