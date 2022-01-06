@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography } from "@material-ui/core"
+import { AppBar, Toolbar } from "@material-ui/core"
 import logo from '../img/logo.png'
 
 export default function Header () {
@@ -9,14 +9,6 @@ export default function Header () {
 <AppBar position="static">
     <Toolbar>
     <img className='logo' src={logo} alt="Logo"/>
-        <Typography
-            variant="h5"
-            component="span"
-            sx={{flexGrow: 1}}
-            >
-            HEMLAGAT
-        </Typography>
-        
         <div className='nav'>
             <a href='#/'>Start-Sida</a>
             <a href='#/store'>Handla</a>
