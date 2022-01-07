@@ -8,9 +8,17 @@
   align-items: center;
   width: 400px;
 }
+
 .mat {
   width: 500px;
 }
+
 .karta {
   width: 400px;
+}
+
+.fire {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
 }
