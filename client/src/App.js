@@ -7,7 +7,6 @@ import Contact from './components/Contact.js'
 import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
 import Store from './components/Store.js'
-import Checkout from './components/checkout/Checkout.js'
 
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
           <Route path='/store'>
               <Store />
           </Route>
-          <Route path='/checkout'><Checkout /></Route>
           <Redirect to='/' />
         </Switch>
       </div>

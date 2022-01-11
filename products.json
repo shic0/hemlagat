@@ -1,5 +1,5 @@
 {"goods": [{
-            "id": "js01",
+            "id": "1",
             "category": "pizza",
             "name": "Pizza 1",
             "description": "Some description tex here",
@@ -7,7 +7,7 @@
             "price": 750
         },
         {
-            "id": "js02",
+            "id": "2",
             "category": "pizza",
             "name": "Pizza 2",
             "description": "Some description tex here",
@@ -15,7 +15,7 @@
             "price": 1450
         },
         {
-            "id": "js03",
+            "id": "3",
             "category": "pizza",
             "name": "Pizza 3",
             "description": "Some description tex here",
@@ -23,7 +23,7 @@
             "price": 950
         },
         {
-            "id": "data01",
+            "id": "4",
             "category": "pizza",
             "name": "Pizza 4",
             "description": "Some description tex here",
@@ -31,7 +31,7 @@
             "price": 850
         },
         {
-            "id": "js04",
+            "id": "5",
             "category": "pizza",
             "name": "Pizza 5",
             "description": "Some description tex here",
@@ -39,7 +39,7 @@
             "price": 550
         },
         {
-            "id": "hemlagat01",
+            "id": "6",
             "category": "hemlagat",
             "name": "HemMat 1",
             "description": "Some description tex here",
@@ -47,7 +47,7 @@
             "price": 1250
         },
         {
-            "id": "hemlagat02",
+            "id": "7",
             "category": "hemlagat",
             "name": "HemMat 2",
             "description": "Some description tex here",
@@ -55,7 +55,7 @@
             "price": 1550
         },
         {
-            "id": "hemlagat03",
+            "id": "8",
             "category": "hemlagat",
             "name": "HemMat 3",
             "description": "Some description tex here",
@@ -63,7 +63,7 @@
             "price": 2250
         },
         {
-            "id": "hemlagat04",
+            "id": "9",
             "category": "hemlagat",
             "name": "HemMat 4",
             "description": "Some description tex here",
@@ -71,7 +71,7 @@
             "price": 1450
         },
         {
-            "id": "sticker01",
+            "id": "10",
             "category": "stickers",
             "name": "dsfgsdfgd",
             "description": "Some description tex here",
@@ -79,7 +79,7 @@
             "price": 550
         },
         {
-            "id": "sticker02",
+            "id": "11",
             "category": "stickers",
             "name": "sdfgsdfg",
             "description": "Some description tex here",
@@ -87,7 +87,7 @@
             "price": 550
         },
         {
-            "id": "sticker03",
+            "id": "12",
             "category": "stickers",
             "name": "sdfgsdfgsdfg",
             "description": "Some description tex here",

@@ -7,6 +7,8 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 const PORT = process.env.PORT || 3001;
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Have Node serve the files for our built React app
 app.use(express.static(path.resolve(__dirname, '../client/build')));
@@ -32,10 +34,11 @@ app.get('/product', async function (req, res) {
     //console.log(product);
 });
 
-app.post('/api/checkout-session', async (req, res) => {
+app.post('/api/checkout-session_', async (req, res) => {
     try {
       const { cart } = req.body;
-      //console.log(cart)
+      const { token, currency, price } = req.body;
+      console.log(cart)
       let carts = []
       cart.forEach((cart) => {
         let lineItem = {
@@ -83,6 +86,29 @@ app.post('/api/checkout-session', async (req, res) => {
     }
   });
 
+  app.post("/api/checkout-session", async (req, res) => {
+    let { amount, id } = req.body
+    try {
+      const payment = await stripe.paymentIntents.create({
+        amount,
+        currency: "SEK",
+        description: "Hemlagat",
+        payment_method: id,
+        confirm: true
+      })
+      console.log("Payment", payment)
+      res.json({
+        message: "Payment successful",
+        success: true
+      })
+    } catch (error) {
+      console.log("Error", error)
+      res.json({
+        message: "Payment failed",
+        success: false
+      })
+    }
+  })
 
 // All other GET requests not handled before will return our React app
 app.get('*', (req, res) => {
