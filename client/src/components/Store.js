@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, createContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import GoodsList from './GoodsList.js'
 import Search from './Search.js'
 import Basket from './Basket.js'
@@ -6,8 +6,6 @@ import Snack from './Snack.js'
 import { Container } from '@material-ui/core'
 import BasketIcon from './BasketIcon.js'
 import { useLocalStorage } from './useLocalStorage.js'
-import Checkout from './checkout/Checkout.js'
-import OrderContext from './Context.js'
 
 const Store = () => {
 const [data, setData] = useLocalStorage('test', ''); //demo test
@@ -24,7 +22,7 @@ const [goods, setGoods] = useState([])
 const [products, setProducts] = useState(goods)
 
 useEffect(() => {
-localStorage.setItem('orders', JSON.stringify(order))
+  localStorage.setItem('orders', JSON.stringify(order))
 }, [order]);
 
 useEffect(() => {
@@ -39,7 +37,7 @@ useEffect(() => {
   }, [])
 
 //console.log('products', products)
-//console.log('goods', goods)
+//console.log('oreder', order)
 
 
 const handleChange = (e) => {
@@ -108,12 +106,6 @@ const addToOrder = (goodsItem) => {
   return (
     <>              
       <Container sx={{ mt: '1rem' }}>
-        <OrderContext.Provider value={'null'}>
-        <Checkout  
-          goods={goods}
-          data={true}
-          />
-          </OrderContext.Provider>
         <BasketIcon 
             handleCart={() => setCartOpen(true)}
             orderLen={order.length}
