@@ -13,7 +13,7 @@ const StartPage = () => {
 
   return (
     <>
-    <Container>
+    <Container height="600px" >
       <h2>Body borjar här</h2>
       <h4>Some text</h4>
       <div className="App-header">
