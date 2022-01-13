@@ -8,7 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 const Footer = () => {
   return (
     
-      <Container m="90px" mt="20px" mb="0px" bgcolor="red" color="white" sx={{ mt: '1rem' }}>
+      <Container color="red" sx={{ mt: '1rem' }}>
         <Grid textAlign="center" container sparing ={5}>
           <Grid item xs= {12} sm= {4}>
             <Box borderBotton = {1}><Typography>Hjälp</Typography></Box>
