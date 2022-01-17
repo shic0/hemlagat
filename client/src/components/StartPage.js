@@ -14,34 +14,36 @@ const StartPage = () => {
 
   return (
     <>
-    
-  <Box spacing={1} height="60vh" backgroundColor="red" marginTop="30px">
-    <Typography variant= "h3">Start Sidan</Typography>
+  
+    <Box spacing={1} paddingLeft="20px" backgroundColor="gray" marginTop="30px">
+      <Typography variant= "h3">Start Sidan</Typography>
 
-    <Typography variant= "h3">Veckans Erbjudande</Typography>
-    <Box display="flex" justifyContent="center" mt="20px">
-      <Box>
-        <Typography variant="body1">Fisk</Typography>
-        <img className='olives' src={olives} alt="Olives" />
-        {/*  Länk till lägg tilll i varukorg?knapp */}
-        <Typography>Ugnsbakad Torsk</Typography>
-        <Typography>89 kronor</Typography>
+      <Typography variant= "h4">Veckans Erbjudande</Typography>
+      <Box display="flex" justifyContent="center"  /* flexDirection="column"  */item xs= {12} sm= {4}>
+      <Grid display="flex" justifyContent="center" mt="20px" container spacing={4}>
+        <Box margin="20px" item xs= {12} sm= {4}>
+          <Typography variant="h5">Fisk</Typography>
+          <img className='olives' src={olives} alt="Olives" />
+          {/*  Länk till lägg tilll i varukorg?knapp */}
+          <Typography>Ugnsbakad Torsk</Typography>
+          <Typography>89 kronor</Typography>
+        </Box>
+        <Box margin="20px" item xs= {12} sm= {4}>
+          <Typography variant="h5">Vegitariska</Typography>
+          <img className='olives' src={olives} alt="Olives" />
+          <Typography>Oliver</Typography>
+          <Typography>20 kronor</Typography>
+        </Box>
+        <Box margin="20px" item xs= {12} sm= {4}>
+          <Typography variant="h5">Kött</Typography>
+          <img className='olives' src={olives} alt="Olives" />
+          <Typography>Pannbiffar i brunsås</Typography>
+          <Typography>89 kronor</Typography>
+        </Box>
+      </Grid>
       </Box>
-      <Box justifyContent="center" alignItems="center">
-        <Typography variant="body1">Vegitariska</Typography>
-        <img className='olives' src={olives} alt="Olives" />
-        <Typography>Oliver</Typography>
-        <Typography>20 kronor</Typography>
-      </Box>
-      <Box>
-        <Typography variant="body1">Kött</Typography>
-        <img className='olives' src={olives} alt="Olives" />
-        <Typography>Pannbiffar i brunsås</Typography>
-        <Typography>89 kronor</Typography>
-      </Box>
-      
     </Box>
-    </Box>
+  
    
 
     </>
