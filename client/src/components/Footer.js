@@ -6,8 +6,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
   return (
-    
-      <Container color="red" sx={{ mt: '1rem' }}>
+/* Integritetspolicyn (privacy policy) synlig i footern på alla sidor.
+Köpvillkor synlig i footern på alla sidor.
+Godkännande av villkor och integritetspolicy. */
+
+      <Container color="green" sx={{ mt: '1rem' }}>
         <Grid textAlign="center" container sparing ={5}>
 
           <Grid item xs= {12} sm= {4}>
@@ -19,12 +22,12 @@ const Footer = () => {
             </Box>
             <Box>
               <Link underline="hover" href="#/policy" color="inherit">
-              <Typography>Privacy</Typography>
+              <Typography>Integritetspolicy</Typography>
               </Link>
             </Box>
             <Box>
-              <Link underline="hover" href="#/contact" color="inherit">
-              <Typography>Kontakta Oss</Typography>
+              <Link underline="hover" href="#/" color="inherit">
+              <Typography>Köpvillkor</Typography>
               </Link>
             </Box>
           </Grid>
@@ -68,7 +71,13 @@ const Footer = () => {
             </Box>
           </Grid>
         </Grid>
-      </Container>      
+        <Box backgroundColor="black" textAlign="center" color="white" marginTop="10px" marginBottom="15px">
+         <Typography>
+         Genom användandet av denna sida godkännas villkor och integritetspolicy
+         </Typography>
+       </Box>
+      </Container> 
+      
     
   )
 }
