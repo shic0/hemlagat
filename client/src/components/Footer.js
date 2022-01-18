@@ -75,6 +75,9 @@ Godkännande av villkor och integritetspolicy. */
          <Typography>
          Genom användandet av denna sida godkännas villkor och integritetspolicy
          </Typography>
+         <Typography>
+         Hemlagat 2022 © Copyright 2022 Alla Rättigheter Reserverade
+         </Typography>
        </Box>
       </Container> 
       
