@@ -1,6 +1,7 @@
 import React from 'react'
 import "./App.css";
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import InfoAlert from './components/InfoAlert.js'
 import Header from './components/Header.js'
 import AboutPage from './components/AboutPage.js'
 import Contact from './components/Contact.js'
@@ -16,6 +17,7 @@ function App() {
     <>
     <Router>
       <div className="App">
+        <InfoAlert />
         <Header />
         <Switch>
           <Route component={StartPage} path='/' exact />
