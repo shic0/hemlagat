@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { Collapse, IconButton, Alert, Box } from "@material-ui/core"; 
+import { Collapse, IconButton, Alert, Box, Container } from "@material-ui/core"; 
 import CloseIcon from '@mui/icons-material/Close';
 
 export default function InfoAlert() {
   const [open, setOpen] = React.useState(true);
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Container sx={{ mt: '1rem', maxWidth: '100vw'}}>
+ 
+   <Box sx={{ width: '100%' }}>
       <Collapse in={open}>
         <Alert
           action={
@@ -27,5 +29,6 @@ export default function InfoAlert() {
         </Alert>
       </Collapse>
     </Box>
+    </Container>
   );
 }

@@ -72,12 +72,15 @@ Godkännande av villkor och integritetspolicy. */
           </Grid>
         </Grid>
         <Box backgroundColor="black" textAlign="center" color="white" marginTop="10px" marginBottom="15px">
-         <Typography>
+         <Typography variant="body2" padding="2px">
          Genom användandet av denna sida godkännas villkor och integritetspolicy
          </Typography>
-         <Typography>
-         Hemlagat 2022 © Copyright 2022 Alla Rättigheter Reserverade
+         <Typography variant="body2">
+        Alla Rättigheter Reserverade
          </Typography>
+         <Typography variant="body2">
+         Hemlagat © Copyright 2022
+        </Typography>
        </Box>
       </Container> 
       
