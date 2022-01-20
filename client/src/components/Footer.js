@@ -14,7 +14,7 @@ Godkännande av villkor och integritetspolicy. */
         <Grid textAlign="center" container sparing ={5}>
 
           <Grid item xs= {12} sm= {4}>
-            <Box color="silver" borderBotton = {1}><Typography>Hjälp</Typography></Box>
+            <Box color="silver" marginTop="10px"><Typography>Hjälp</Typography></Box>
             <Box>
               <Link underline="hover" href="#/support" color="inherit">
               <Typography>Support</Typography>
@@ -32,7 +32,7 @@ Godkännande av villkor och integritetspolicy. */
             </Box>
           </Grid>
           <Grid item xs= {12} sm= {4}>
-            <Box color="silver" borderBotton = {1}><Typography>Ditt Konto</Typography></Box>
+            <Box color="silver" marginTop="10px"><Typography>Ditt Konto</Typography></Box>
             <Box>
               <Link underline="hover" href="/" color="inherit">
               <Typography>Logga In</Typography>
@@ -52,7 +52,7 @@ Godkännande av villkor och integritetspolicy. */
           
           <Grid item xs= {12} sm= {4}>
             <Box >
-              <Typography color="silver" borderBotton = {1}>Besök oss på HEMLAGAT</Typography>
+              <Typography color="silver" marginTop="10px">Besök oss på HEMLAGAT</Typography>
             </Box>
             <Box>
               <Link href="https://www.google.com/maps/place/Skanstorget+3,+411+22+G%C3%B6teborg/@57.6957226,11.9570257,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36b9be81b9b:0x638bd5988122b6e0!8m2!3d57.6957198!4d11.9592144" color="inherit">
@@ -71,7 +71,7 @@ Godkännande av villkor och integritetspolicy. */
             </Box>
           </Grid>
         </Grid>
-        <Box backgroundColor="black" textAlign="center" color="white" marginTop="10px" marginBottom="15px">
+        <Box  backgroundColor="black" textAlign="center" color="white" marginTop="10px" marginBottom="15px">
          <Typography variant="body2" padding="2px">
          Genom användandet av denna sida godkännas villkor och integritetspolicy
          </Typography>
