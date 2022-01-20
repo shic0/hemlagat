@@ -6,7 +6,7 @@ import logo from '../img/logo.png'
 const  Header = () => {
   return (
 
-    <Container sx={{ mt: '1rem' }}>
+    <Container sx={{ mt: '1rem', maxWidth: '100vw'}}>
         <AppBar position="static">
             <Toolbar>
             

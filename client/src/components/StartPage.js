@@ -14,7 +14,8 @@ const StartPage = () => {
 
   return (
     <>
-  
+    <Container sx={{ mt: '1rem', maxWidth: '100vw'}}>
+
     <Box spacing={1} paddingLeft="20px" backgroundColor="gray" marginTop="30px">
       <Typography variant= "h3">Start Sidan</Typography>
 
@@ -43,6 +44,7 @@ const StartPage = () => {
       </Grid>
       </Box>
     </Box>
+    </Container>
   
    
 
