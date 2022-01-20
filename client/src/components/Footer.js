@@ -76,10 +76,7 @@ Godkännande av villkor och integritetspolicy. */
          Genom användandet av denna sida godkännas villkor och integritetspolicy
          </Typography>
          <Typography variant="body2">
-        Alla Rättigheter Reserverade
-         </Typography>
-         <Typography variant="body2">
-         Hemlagat © Copyright 2022
+         Hemlagat © Copyright 2022 Alla Rättigheter Reserverad
         </Typography>
        </Box>
       </Container> 
