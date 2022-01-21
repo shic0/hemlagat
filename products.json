@@ -85,13 +85,4 @@
             "description": "Some description tex here",
             "poster": "https://images.unsplash.com/photo-1496493820873-82288ac48a48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
             "price": 550
-        },
-        {
-            "id": "12",
-            "category": "stickers",
-            "name": "sdfgsdfgsdfg",
-            "description": "Some description tex here",
-            "poster": "https://images.unsplash.com/photo-1593754500338-969a679d5ca3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-            "price": 1550
-        }]
-}
+        }
