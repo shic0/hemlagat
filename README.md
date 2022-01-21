@@ -24,3 +24,15 @@ Sprint 3
 Sprint 4
 1/2-2021 7/2-2021 Presentation av projekt.
 
+
+## How to run this app
+
+1. Into your root path, run `npm i` to install the packages on the front end, than start the front end server with `npm start`
+2. Into your root path, run `cd server` and `npm i` to install the packages on the back end and start the back end server with `npm start`
+3. Open http://localhost:3000 to view it in the browser.
+
+## Stripe integration explanation
+
+- on the front end: `npm i @stripe/react-stripe-js @stripe/stripe-js`
+- on the back end: `cd server && npm i stripe`
+

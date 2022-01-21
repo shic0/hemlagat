@@ -1,0 +1,44 @@
+.logo {
+  width: 100px;
+}
+
+.mat {
+  width: 500px;
+}
+
+.karta {
+  width: 400px;
+}
+
+.fire {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+}
+
+.footerKnapppar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Armata", sans-serif;
+  font-size: 17px;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #61dafb;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.olives{
+  height: 300px;
+}
