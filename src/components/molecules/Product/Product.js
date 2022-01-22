@@ -14,7 +14,7 @@ const Product = ({ product }) => {
       <h3>
         {id}. {name}
       </h3>
-      <img src={image} alt={name} width="250" height="250" />
+      <img className={style.img} src={image} alt={name} />
       <p className={style.description}>{description}</p>
       <div className={style.price}>Pris: {price} SEK</div>
 

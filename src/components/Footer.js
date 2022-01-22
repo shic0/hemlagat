@@ -9,7 +9,6 @@ const Footer = () => {
     <>
 
     <Container style={{ marginTop: '2rem', maxWidth: '95%' }}>
-    
     <Grid container sparing ={5}>
 
       <Grid item xs= {12} sm= {4}>
