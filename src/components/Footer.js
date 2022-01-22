@@ -1,15 +1,15 @@
 import React from 'react'
 /* import { useHistory } from 'react-router-dom' */
 import { Container, ListItemIcon, Box, Link, Grid, Typography, Button } from "@material-ui/core"; 
-//import FacebookIcon from '@mui/icons-material/Facebook';
-//import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
   return (
     <>
 
-    <Container sx={{ marginTop: '3rem', maxWidth: '95%', position: 'static',  background: '#61dafb', height: '500px' }}>
-
+    <Container style={{ marginTop: '2rem', maxWidth: '95%' }}>
+    
     <Grid container sparing ={5}>
 
       <Grid item xs= {12} sm= {4}>
@@ -62,10 +62,10 @@ const Footer = () => {
         </Box>
         <Box>
             <ListItemIcon>
-              <Button href="https://www.facebook.com/Hemlagat-107368028494671"></Button>
+              <Button href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /></Button>
             </ListItemIcon>
             <ListItemIcon>
-              <Button href="https://www.instagram.com/_hemlagat_/"></Button>
+              <Button href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Button>
             </ListItemIcon>
         </Box>
       </Grid>
