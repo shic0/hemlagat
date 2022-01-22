@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
 
-    <Container sx={{ marginTop: '3rem', maxWidth: '95%', position: 'static',  background: '#61dafb', height: '500px' }}>
+    <Container style={{ marginTop: '2rem', maxWidth: '95%' }}>
 
     <Grid container sparing ={5}>
 

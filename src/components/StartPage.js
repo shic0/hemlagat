@@ -9,7 +9,7 @@ const StartPage = () => {
 
   return (
     <>
-    <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: '1rem', width: '100%', height: '500px' }}>
+    <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: '1rem', width: '100%' }}>
     <Box spacing={1} paddingLeft="20px" backgroundColor="gray" marginTop="30px" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Typography variant= "h5" style={{ color: 'red', fontStyle: 'oblique' }}>Detta är en demobutik!</Typography>
       <Typography variant= "h4">Veckans Erbjudande</Typography>

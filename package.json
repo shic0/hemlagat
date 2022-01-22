@@ -2,6 +2,7 @@
   "name": "hemlagat",
   "version": "0.1.0",
   "description": "examenarbetet",
+  "homepage": "https://luxar.se",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -26,6 +27,7 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0"
   },
+  "proxy": "https://hemlagat.herokuapp.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

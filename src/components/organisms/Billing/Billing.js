@@ -86,7 +86,7 @@ const Billing = () => {
       // Bestäm alltid hur mycket vi ska ta betalt på serversidan och aldrig klient sidan. Detta hindrar illvilliga kunder från att kunna välja sina egna priser. Lite tips fran Kanan
       const {
         data: { client_secret: clientSecret }
-      } = await Axios.post('payment/secret', {
+      } = await Axios.post('https://hemlagat.herokuapp.com/payment/secret', {
         products: cart.products.map((product) => ({
           id: product.id,
           quantity: product.quantity

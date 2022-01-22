@@ -8,7 +8,7 @@ const Products = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await Axios.get('products');
+      const { data } = await Axios.get('https://hemlagat.herokuapp.com/products');
       setProducts(data.products);
     };
 
