@@ -10,7 +10,7 @@ const paymentRouter = require('./routes/payment');
 
 const app = express();
 
-app.use(logger('dev'));
+app.use(logger('../public'));
 app.use(
   express.json({
     // We need the raw body to verify webhook signatures.
