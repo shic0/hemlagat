@@ -14,6 +14,7 @@ import AboutPage from './components/AboutPage.js'
 import Contact from './components/Contact.js'
 import Support from './components/Support.js'
 import Policy from './components/Policy.js'
+import Terms from './components/Terms.js'
 import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
 
@@ -47,6 +48,8 @@ function App() {
         <Route component={Contact} path='/contact' />
         <Route component={Support} path='/support' />
         <Route component={Policy} path='/policy' />
+        <Route component={Terms} path='/terms' />
+
       </Switch>
       <Footer />
     </Router>
