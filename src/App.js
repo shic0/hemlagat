@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { useDispatch } from 'react-redux';
 import Home from './components/pages/Home/Home';
+import InfoAlert from './components/InfoAlert.js';
 import Header from './components/molecules/Menu/Menu';
 import Cart from './components/pages/Cart/Cart';
 import Checkout from './components/pages/Checkout/Checkout';
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <Router>
+      <InfoAlert />
       <Header />
       <Switch>
         <Route path="/cart" exact>
