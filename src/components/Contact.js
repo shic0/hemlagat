@@ -11,7 +11,7 @@ const Contact = () => {
     <>
     <Container>
 
-     <Box style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: "30px", backgroundColor: "white" }} height="60vh"  >
+     <Box style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: "30px" }} height="60vh"  >
        <Typography variant= "h3">
           Kontakt
         </Typography>

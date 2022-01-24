@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles/App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import { useDispatch } from 'react-redux';
 import Home from './components/pages/Home/Home';
 import Header from './components/molecules/Menu/Menu';
@@ -15,6 +14,7 @@ import Support from './components/Support.js'
 import Policy from './components/Policy.js'
 import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
+import InfoAlert from './components/InfoAlert';
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
 
   return (
     <Router>
+      <InfoAlert/>
       <Header />
       <Switch>
         <Route path="/cart" exact>
