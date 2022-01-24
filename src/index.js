@@ -14,7 +14,7 @@ const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 const theme = createTheme({
   palette: {
       primary: {
-          main: '#61dafb'
+          main: '#3f83ba'
       },
       secondary: {
           main: '#00ff00'

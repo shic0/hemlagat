@@ -1,8 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { Box, ListItemIcon, Typography, Button, Container } from "@material-ui/core";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+//import FacebookIcon from '@mui/icons-material/Facebook';
+//import InstagramIcon from '@mui/icons-material/Instagram';
 import karta from './img/karta.png'
 
 const Contact = () => {
