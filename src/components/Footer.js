@@ -88,7 +88,7 @@ const Footer = () => {
       </Box>
     </Box>
   </Container> 
-     
+     </>
   )
 }
 
