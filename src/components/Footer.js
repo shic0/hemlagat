@@ -5,9 +5,10 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 
+
 const Footer = () => {
   return (
-
+    <>
   <Container sx={{ mt: '1rem', maxWidth: '100vw'}}>
     <Box spacing={1} marginTop="30px" textAlign="center">
         <Grid container sparing ={5}>
@@ -87,8 +88,7 @@ const Footer = () => {
       </Box>
     </Box>
   </Container> 
-      
-    
+     
   )
 }
 

@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { useDispatch } from 'react-redux';
 import Home from './components/pages/Home/Home';
-import InfoAlert from './components/InfoAlert.js';
 import Header from './components/molecules/Menu/Menu';
 import Cart from './components/pages/Cart/Cart';
 import Checkout from './components/pages/Checkout/Checkout';
@@ -14,7 +13,6 @@ import AboutPage from './components/AboutPage.js'
 import Contact from './components/Contact.js'
 import Support from './components/Support.js'
 import Policy from './components/Policy.js'
-import Terms from './components/Terms.js'
 import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
 
@@ -28,7 +26,6 @@ function App() {
 
   return (
     <Router>
-      <InfoAlert />
       <Header />
       <Switch>
         <Route path="/cart" exact>
@@ -48,8 +45,6 @@ function App() {
         <Route component={Contact} path='/contact' />
         <Route component={Support} path='/support' />
         <Route component={Policy} path='/policy' />
-        <Route component={Terms} path='/terms' />
-
       </Switch>
       <Footer />
     </Router>
