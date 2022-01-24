@@ -16,10 +16,10 @@ const Header = () => {
         <Toolbar>
             <Link to="/"><img className='logo' src={logo} alt="Logo" /></Link>
             <div className='nav'>
-                <Link to="/store"><span role="img" aria-label="sheep">Butik</span></Link>
-                <Link to="/contact"><span role="img" aria-label="sheep">Kontakt</span></Link>
-                <Link to="/about"><span role="img" aria-label="sheep">Om oss</span></Link>
-                <Link to="/cart"><span role="img" aria-label="sheep">🛒{numberOfProducts}</span></Link>
+                <Link style={{ color: 'white' }} to="/store"><span role="img" aria-label="sheep">Butik</span></Link>
+                <Link style={{ color: 'white' }} to="/contact"><span role="img" aria-label="sheep">Kontakt</span></Link>
+                <Link style={{ color: 'white' }} to="/about"><span role="img" aria-label="sheep">Om oss</span></Link>
+                <Link style={{ color: 'white' }} to="/cart"><span role="img" aria-label="sheep">🛒{numberOfProducts}</span></Link>
             </div>
         </Toolbar>
     </AppBar>

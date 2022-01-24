@@ -1,8 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { Box, ListItemIcon, Typography, Button, Container } from "@material-ui/core";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+//import FacebookIcon from '@mui/icons-material/Facebook';
+//import InstagramIcon from '@mui/icons-material/Instagram';
 import karta from './img/karta.png'
 
 const Contact = () => {
@@ -20,8 +20,8 @@ const Contact = () => {
       <Typography>Öppettider: Mån-Sön 11.45-23.45</Typography>
       <Box>
         <ListItemIcon>
-          <Button href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon/></Button>
-          <Button href="https://www.instagram.com/_hemlagat_/"><InstagramIcon/></Button>
+          <Button href="https://www.facebook.com/Hemlagat-107368028494671"> </Button>
+          <Button href="https://www.instagram.com/_hemlagat_/"></Button>
         </ListItemIcon>
       </Box>
       <img className='karta' src={karta} alt="Karta" />

@@ -7,6 +7,7 @@ const CartButton = ({ onClick, title, className = '' }) => {
       {title}
     </button>
   );
+  
 };
 
 CartButton.propTypes = {

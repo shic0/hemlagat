@@ -1,52 +1,45 @@
-
-
 import React from 'react'
 import { Container, Box, Grid, Typography } from "@material-ui/core"; 
-//import { useHistory } from 'react-router-dom'
 import olives from './img/olives.jpeg'
-/* import pannbiff from './img/pannbiff.jpeg' */
+import fisk from './img/fisk.jpg'
+import pannbiff from './img/pannbiff.jpg'
+import salat from './img/salat.jpg'
 
 const StartPage = () => {
 
-  
-
   return (
     <>
-  <Container sx={{ mt: '1rem', maxWidth: '100vw'}}>
-
-    <Box spacing={1} marginTop="30px" textAlign="center">
-      <Typography variant= "h3">Start Sidan</Typography>
-
+    <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: '1rem', width: '100%' }}>
+    <Box spacing={1} paddingLeft="20px" backgroundColor="gray" marginTop="30px" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Typography variant= "h5" style={{ color: 'red', fontStyle: 'oblique' }}>Detta är en demobutik!</Typography>
       <Typography variant= "h4">Veckans Erbjudande</Typography>
-      <Box display="flex" justifyContent="center"  /* flexDirection="column"  */item xs= {12} sm= {4}>
+      <Box display="flex" justifyContent="center"  flexDirection="column" item xs= {12} sm= {4}>
       <Grid display="flex" justifyContent="center" mt="20px" container spacing={4}>
-        <Box maxWidth="100vw" margin="20px" item xs= {12} sm= {4}>
-          <Typography variant="h5">Fisk</Typography>
-          <img className='pic-size' src={olives} alt="Olives" />
-          {/*  Länk till lägg tilll i varukorg?knapp */}
+        <Box margin="20px" item xs= {12} sm= {4}>
+          <img className='olives' src={fisk} alt="fisk" />
           <Typography>Ugnsbakad Torsk</Typography>
-          <Typography>89 kronor</Typography>
+          <Typography style={{ color: 'red' }}>89 SEK</Typography>
         </Box>
         <Box margin="20px" item xs= {12} sm= {4}>
-          <Typography variant="h5">Vegitariska</Typography>
-          <img className='pic-size' src={olives} alt="Olives" />
+          <img className='olives' src={olives} alt="Olives" />
           <Typography>Oliver</Typography>
-          <Typography>20 kronor</Typography>
+          <Typography style={{ color: 'red' }}>49 SEK</Typography>
         </Box>
         <Box margin="20px" item xs= {12} sm= {4}>
-          <Typography variant="h5">Kött</Typography>
-          <img className='pic-size' src={olives} alt="Pannbiffar" />
+          <img className='olives' src={pannbiff} alt="pannbiff" />
           <Typography>Pannbiffar i brunsås</Typography>
-          <Typography>89 kronor</Typography>
+          <Typography style={{ color: 'red' }}>89 SEK</Typography>
+        </Box>
+        <Box margin="20px" item xs= {12} sm= {4}>
+          <img className='olives' src={salat} alt="pannbiff" />
+          <Typography>Sallader</Typography>
+          <Typography style={{ color: 'red' }}>79 SEK</Typography>
         </Box>
       </Grid>
       </Box>
     </Box>
-  </Container>
-  
-   
-
-    </>
+    </Container>
+  </>
   )
 }
 
