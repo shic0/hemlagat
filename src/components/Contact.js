@@ -20,8 +20,8 @@ const Contact = () => {
       <Typography>Öppettider: Mån-Sön 11.45-23.45</Typography>
       <Box>
         <ListItemIcon>
-          <Button href="https://www.facebook.com/Hemlagat-107368028494671"> </Button>
-          <Button href="https://www.instagram.com/_hemlagat_/"></Button>
+          <Button href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon/></Button>
+          <Button href="https://www.instagram.com/_hemlagat_/"><InstagramIcon/></Button>
         </ListItemIcon>
       </Box>
       <img className='karta' src={karta} alt="Karta" />

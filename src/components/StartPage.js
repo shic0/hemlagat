@@ -1,19 +1,14 @@
 
 
-import React, { useState, useEffect } from 'react'
-import { Container, ListItemIcon, Box, Link, Grid, Typography, Button } from "@material-ui/core"; 
-import { useHistory } from 'react-router-dom'
+import React from 'react'
+import { Container, Box, Grid, Typography } from "@material-ui/core"; 
+//import { useHistory } from 'react-router-dom'
 import olives from './img/olives.jpeg'
 /* import pannbiff from './img/pannbiff.jpeg' */
 
 const StartPage = () => {
-  const [data, setData] = useState(null)
 
-  useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  
 
   return (
     <>
