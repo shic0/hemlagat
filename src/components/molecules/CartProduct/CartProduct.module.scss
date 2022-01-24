@@ -4,6 +4,7 @@
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid lightgray;
+  flex-direction: column;
 
 
   .nameAndImage {
@@ -25,5 +26,10 @@
     flex-grow: 1;
     text-align: right;
     width: 100px;
+  }
+}
+@media (min-width: 670px) {
+  .product {
+    flex-direction: row;
   }
 }
