@@ -11,7 +11,7 @@ const Header = () => {
   const numberOfProducts = useSelector((state) => state.cart.length);
 
   return (
-    <Container style={{ marginTop: '1rem', marginBottom: '1rem'}}>
+  <Container style={{ marginTop: '1rem', marginBottom: '1rem'}}>
     <AppBar position="static">
         <Toolbar>
             <Link to="/"><img className='logo' src={logo} alt="Logo" /></Link>
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
         </Toolbar>
     </AppBar>
-</Container>
+  </Container>
   );
 };
 
