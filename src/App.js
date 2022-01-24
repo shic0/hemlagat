@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles/App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import { useDispatch } from 'react-redux';
 import Home from './components/pages/Home/Home';
 import InfoAlert from './components/InfoAlert.js';
