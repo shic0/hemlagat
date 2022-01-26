@@ -31,8 +31,7 @@ const StartPage = () => {
           </Box>
         </Box>
 
-        </Grid>
-        <Grid display="flex" justifyContent="center" mt="20px" container spacing={4}>
+        
         <Box margin="20px" item xs= {12} sm= {4}>
           <img className='olives' src={pannbiff} alt="pannbiff" />
           <Box style={{ textAlign: 'center' }}>

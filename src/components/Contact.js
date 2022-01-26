@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import { Container, Box, ListItemIcon, Typography, Button } from "@material-ui/core";
+import { Link, Container, Box, ListItemIcon, Typography, Button } from "@material-ui/core";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import karta from './img/karta.png'
@@ -16,14 +16,24 @@ const Contact = () => {
       </Typography>
       <Typography>031-44 33 00</Typography>
       <Typography>hemlagat@yourdoor.com</Typography>
-      <Box>
+      <Typography>
+          Öppettider: 10.30 - 22.00 
+        </Typography>
+      <Box marginTop="20px">
         <ListItemIcon>
-          <Button href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /> </Button>
-          <Button href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Button>
+          <Link  href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /> </Link>
+        </ListItemIcon>
+        <ListItemIcon>
+          <Link href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Link>
         </ListItemIcon>
       </Box>
-      <Box>
+      <Box marginTop="30px">
         <img className='karta' src={karta} alt="Karta" />
+      </Box>
+      <Box>
+        <Typography>
+        Argongatan 2B, Mölndal
+        </Typography>
       </Box>
     </Box>
     <Box spacing={1} marginTop="30px" textAlign="center">

@@ -59,9 +59,12 @@ const Footer = () => {
               <Typography>Besök oss på HEMLAGAT</Typography>
             </Box>
             <Box>
+            <Typography>
+                Öppettider: 10.30 - 22.00 
+                </Typography>
               <Link href="https://www.google.com/maps/place/Skanstorget+3,+411+22+G%C3%B6teborg/@57.6957226,11.9570257,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36b9be81b9b:0x638bd5988122b6e0!8m2!3d57.6957198!4d11.9592144" color="inherit">
                 <Typography>
-                Skanstorget 3 431 22 Mölndal
+                Argongatan 2B, Mölndal
                 </Typography>
               </Link>
             </Box>
