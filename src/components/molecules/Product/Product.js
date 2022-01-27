@@ -4,12 +4,16 @@ import { useDispatch } from 'react-redux';
 import style from './Product.module.scss';
 import CartButton from '../../atoms/CartButton/CartButton';
 import { addToCart } from '../../../store/actions/cartActions';
+import { Container, ListItemIcon, Box, Link, Grid, Typography, Button} from "@material-ui/core"; 
+import { useHistory } from 'react-router-dom'
 
 const Product = ({ product }) => {
   const { id, name, price, image, description } = product;
   const dispatch = useDispatch();
+  const history = useHistory()
 
   return (
+    
     <div className={style.product}>
       <h3>
         {id}. {name}
@@ -22,6 +26,8 @@ const Product = ({ product }) => {
         title="Lägg till varukorg"
         onClick={() => dispatch(addToCart(product))}
       />
+      <Button style={{ color: 'white', backgroundColor: 'skyblue', textDecoration: 'none' }} onClick={() => history.push('/cart')} variant="outlined"><span role="img" aria-label="sheep">Till varukorgen</span></Button> 
+
     </div>
   );
 };
