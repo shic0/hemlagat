@@ -11,10 +11,9 @@ import {
 } from '../../../store/actions/cartActions';
 
 const CartProduct = ({ product }) => {
-  const { id, name, quantity, price, image, description } = product;
+  const { id, name, quantity, price, image } = product;
 
   const dispatch = useDispatch();
-console.log(description)
   return (
     <div className={style.product} key={id}>
       <div className={style.nameAndImage}>

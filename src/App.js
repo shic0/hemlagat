@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles/App.scss';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Home from './components/pages/Home/Home';
 import Header from './components/molecules/Menu/Menu';
@@ -15,6 +15,8 @@ import Policy from './components/Policy.js'
 import Footer from './components/Footer.js'
 import StartPage from './components/StartPage.js'
 import InfoAlert from './components/InfoAlert';
+import ErrorPage from './components/Error404'
+
 
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
         <Route component={Contact} path='/contact' />
         <Route component={Support} path='/support' />
         <Route component={Policy} path='/policy' />
+        <Route component={ErrorPage} path="/404" />
+        <Redirect to="/404" />
       </Switch>
       <Footer />
     </Router>
