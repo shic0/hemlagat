@@ -7,7 +7,7 @@ export default function InfoAlerts() {
 
   return (
   <Container>
-    <Box sx={{ width: '100%' }}>
+    <Box mt="100px" sx={{ width: '100%' }}>
       <Collapse in={open}>
         <Alert
           action={

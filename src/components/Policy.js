@@ -6,19 +6,18 @@ const Policy = () => {
     const history = useHistory()
     return (
       <>
-    <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-
-       <Box style={{ marginTop: "30px" }} height="60vh" >
-          <Typography color="black" variant="h3">
-              Policy
-          </Typography>
-          <Typography variant="body1">
-              Våra policy är 100 % nöjd kund!
-          </Typography>
-        </Box>
-        <Box>
-          <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
-          <Button onClick={() => history.push('/')} variant="outlined">Back to Start</Button>
+     <Container sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+      <Box spacing={1} marginTop="30px" textAlign="center">
+        <Typography variant= "h3">
+          Integritetspolicy
+        </Typography>
+        <Typography variant="body1">
+          Våra policy är 100 % nöjd kund!
+        </Typography>
+      </Box>
+      <Box spacing={1} marginTop="30px" textAlign="center">
+        <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
+        <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
       </Box>
     </Container>
       </>

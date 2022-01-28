@@ -3,11 +3,11 @@
 }
 
 .mat {
-  width: 500px;
+  width: 300px;
 }
 
 .karta {
-  width: 400px;
+  width: 300px;
 }
 
 .fire {
@@ -41,6 +41,7 @@
 
 .olives{
   height: 230px;
+  width: 330px;
 }
 
 .actionables {
