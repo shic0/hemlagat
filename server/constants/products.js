@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     api_id: "price_1KIupQKM0qNX2m1Ef1CDKERY",
-    category: "pasta",
+    category: "Pasta",
     name: "Truffle Pasta",
     description: "Tryffle pasta med svenska svampar och gräddsås",
     price: 75,
@@ -12,7 +12,7 @@ const products = [
   {
     id: 2,
     api_id: "price_1KIv32KM0qNX2m1EQuq3042O",
-    category: "pasta",
+    category: "Pasta",
     name: "Spahetti Bolonese",
     description: "Spagetti Bolonese på svenskt vis",
     price: 70,
@@ -42,7 +42,7 @@ const products = [
   {
     id: 5,
     api_id: "price_1KIvfaKM0qNX2m1EscfpVfg2",
-    category: "kött",
+    category: "Kött",
     name: "Stekt renskalv",
     description: "Stekt renskalv serveras med hemlagad potatismos, kantarellsås och enbar",
     price: 80,
@@ -52,7 +52,7 @@ const products = [
   {
     id: 6,
     api_id: "price_1KIvqLKM0qNX2m1ENOdYIcsM",
-    category: "kött",
+    category: "Kött",
     name: "Köttbullar",
     description: "Svenska köttbullar serveras med potatismos, pressgurka, rårörda lingon från svenska skogar och brunsås",
     price: 75,
@@ -62,7 +62,7 @@ const products = [
   {
     id: 7,
     api_id: "price_1KIwBrKM0qNX2m1ECIWFORLt",
-    category: "kött",
+    category: "Kött",
     name: "Pyttipanna med köttfärs",
     description: "Svensk klassiker. Gjord på nypotatis och högrevsköttfärs, serveras med stekt ägg och rödbetor",
     price: 65,
@@ -72,7 +72,7 @@ const products = [
   {
     id: 8,
     api_id: "price_1KIwQfKM0qNX2m1EO7uFDkdH",
-    category: "fisk",
+    category: "Fisk",
     name: "Bakpotatis fylld med tonfiskröra",
     description: "Svensk bakpotatis med krämig tonfiskröra och persilja, serveras med sallad",
     price: 65,
@@ -82,7 +82,7 @@ const products = [
   {
     id: 9,
     api_id: "price_1KIwk8KM0qNX2m1EEJiTxwT5",
-    category: "fisk",
+    category: "Fisk",
     name: "Korvstroganoff",
     description: "Korvstroganoff med ris",
     price: 65,
@@ -92,7 +92,7 @@ const products = [
   {
     id: 10,
     api_id: "price_1KIxfBKM0qNX2m1E3na3UjIO",
-    category: "fisk",
+    category: "Fisk",
     name: "Torsk",
     description: "Torsk från västkusten med potatismos ärtor och dill",
     price: 70,
@@ -102,7 +102,7 @@ const products = [
   {
     id: 11,
     api_id: "price_1KIxkIKM0qNX2m1EKECgEKMe",
-    category: "kött",
+    category: "Kött",
     name: "Pannbiffar",
     description: "Pannbiffar med nypotatis lingon och sockerärtor",
     price: 70,
@@ -112,7 +112,7 @@ const products = [
   {
     id: 12,
     api_id: "price_1KIyJAKM0qNX2m1EFM28a09H",
-    category: "kött",
+    category: "Kött",
     name: "Entrecote",
     description: "Svensk entrecote med hemmalagade pommes frites, serveras med rödvinssky på sidan",
     price: 95,
@@ -122,7 +122,7 @@ const products = [
   {
     id: 13,
     api_id: "price_1KIyWdKM0qNX2m1ER4xEgFl4",
-    category: "pasta",
+    category: "Pasta",
     name: "Spagetti Marinara",
     description: "Svenska pilgrimsmusslor med chili och vitlök i vitvinssås",
     price: 85,
@@ -132,7 +132,7 @@ const products = [
   {
     id: 14,
     api_id: "price_1KIydDKM0qNX2m1E46CVZUS0",
-    category: "soppa",
+    category: "Soppa",
     name: "Pumpasoppa",
     description: "Krämig, smakrik och söt pumpasoppa, toppas med gräddfil, örter och chili",
     price: 55,
@@ -142,7 +142,7 @@ const products = [
   {
     id: 15,
     api_id: "price_1KIyidKM0qNX2m1EewBXqDTW",
-    category: "soppa",
+    category: "Soppa",
     name: "Tomat och championsoppa",
     description: "Smakrik tomat och championsoppa, med en hint utav vitlök, citron och chili",
     price: 70,
