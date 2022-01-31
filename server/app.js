@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 
 const productsRouter = require('./routes/products');
 const paymentRouter = require('./routes/payment');
@@ -56,7 +57,7 @@ app.use(bodyParser.json());
 app.use('/products', productsRouter);
 app.use('/payment', paymentRouter);
 
-/* // ---------------- publish ----------------
+// ---------------- publish ----------------
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'build')));
 
@@ -66,7 +67,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/build/index.html'));
 });
 // --------------------------------
- */
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
