@@ -6,7 +6,7 @@ const Policy = () => {
     const history = useHistory()
     return (
       <>
-     <Container sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+    <Container sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
       <Box spacing={1} marginTop="30px" textAlign="center">
         <Typography variant= "h3">
           Integritetspolicy

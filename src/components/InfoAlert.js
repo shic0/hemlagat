@@ -6,8 +6,7 @@ export default function InfoAlerts() {
   const [open, setOpen] = React.useState(true);
 
   return (
-  <Container>
-    <Box mt="100px" sx={{ width: '100%' }}>
+    <Box mt="80px" sx={{ width: '100%' }}>
       <Collapse in={open}>
         <Alert
           action={
@@ -22,12 +21,12 @@ export default function InfoAlerts() {
               <CloseIcon fontSize="inherit" />
             </IconButton>
           }
-          sx={{ mb: 2 }}
+          sx={{}}
         >
          Detta är en demobutik
         </Alert>
       </Collapse>
     </Box>
-  </Container>
+  
   );
 }
