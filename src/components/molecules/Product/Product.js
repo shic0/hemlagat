@@ -15,7 +15,7 @@ const Product = ({ product }) => {
   return (
     
     <div className={style.product}>
-      <h3>
+      <h3 className={style.name}>
         {id}. {name}
       </h3>
       <img className={style.img} src={image} alt={name} />
