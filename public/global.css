@@ -39,6 +39,14 @@
   margin: 2rem;
 }
 
+.cookies {
+  position: absolute;
+  margin-top: 0;
+  width: 100vw;
+  height: 20%;
+  padding: 0;
+}
+
 .olives{
   height: 230px;
   width: 330px;

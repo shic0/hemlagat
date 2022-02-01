@@ -9,7 +9,7 @@ import { clearCart } from '../../../store/actions/cartActions';
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-  console.log(cart.products[0])
+  //console.log(cart.products[0])
   return (
     <div className="container">
       <h1>Varukorg lista</h1>

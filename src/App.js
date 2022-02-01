@@ -8,16 +8,14 @@ import Cart from './components/pages/Cart/Cart';
 import Checkout from './components/pages/Checkout/Checkout';
 import { getCartFromStorage } from './store/actions/cartActions';
 import Success from './components/pages/Success/Success';
-import AboutPage from './components/AboutPage.js'
-import Contact from './components/Contact.js'
-import Support from './components/Support.js'
-import Policy from './components/Policy.js'
-import Terms from './components/Terms.js'
-import Footer from './components/Footer.js'
-import StartPage from './components/StartPage.js'
-import InfoAlert from './components/InfoAlert';
-import ErrorPage from './components/Error404'
-
+import AboutPage from './components/AboutPage.js';
+import Contact from './components/Contact.js';
+import Support from './components/Support.js';
+import Policy from './components/Policy.js';
+import Terms from './components/Terms.js';
+import Footer from './components/Footer.js';
+import StartPage from './components/StartPage.js';
+import ErrorPage from './components/Error404';
 
 
 function App() {
@@ -30,7 +28,6 @@ function App() {
   return (
     <Router>
       <Header />
-      <InfoAlert/>
       <Switch>
         <Route path="/cart" exact>
           <Cart />
@@ -53,7 +50,7 @@ function App() {
         <Route component={Terms} path='/terms' />
         <Redirect to="/404" />
       </Switch>
-      <Footer />
+      <Footer /> 
     </Router>
   );
 }
