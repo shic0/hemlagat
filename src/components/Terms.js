@@ -11,7 +11,7 @@ const history = useHistory()
         <Typography variant= "h3">
           Köpvillkor
         </Typography>
-          <Typography variant="body1">
+          <Typography class="padding" variant="body1">
               Nöjdkund garanti - leverans inom 30 min inom Mölndal
           </Typography>
           <Typography variant="body1">
