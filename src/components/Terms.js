@@ -3,15 +3,15 @@ import { useHistory } from 'react-router-dom'
 import { Box, Typography, Button, Container } from "@material-ui/core";
 
 const Terms = () => {
-    const history = useHistory()
+const history = useHistory()
     return (
       <>
-    <Container sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
-      <Box spacing={1} marginTop="30px" textAlign="center">
+    <Container class="padding" sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+      <Box spacing={1} textAlign="center">
         <Typography variant= "h3">
           Köpvillkor
         </Typography>
-          <Typography variant="body1">
+          <Typography class="padding" variant="body1">
               Nöjdkund garanti - leverans inom 30 min inom Mölndal
           </Typography>
           <Typography variant="body1">
