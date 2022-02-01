@@ -42,7 +42,7 @@
 .cookies {
   position: absolute;
   margin-top: 0;
-  width: 100vw;
+  max-width: 1250px;
   height: 20%;
   padding: 0;
 }

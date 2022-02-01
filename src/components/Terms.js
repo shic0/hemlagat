@@ -6,7 +6,7 @@ const Terms = () => {
     const history = useHistory()
     return (
       <>
-    <Container sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+    <Container style={{ mt: '1rem', maxWidth: '100vw', minHeight: '500px'}}>
       <Box spacing={1} marginTop="30px" textAlign="center">
         <Typography variant= "h3">
           Köpvillkor
@@ -18,11 +18,11 @@ const Terms = () => {
               Annars bjuder vi på maten!
           </Typography>
         </Box>
-        <Box spacing={1} marginTop="30px" textAlign="center">
+    </Container>
+        <Box style={{display: "flex", justifyContent: "space-evenly" }}>
           <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
           <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
         </Box>
-    </Container>
       </>
     )
   }

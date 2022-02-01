@@ -21,8 +21,10 @@ const ErrorPage = () => {
       <Typography>kundservice@hemlagat-mat.se</Typography>
       
     </Box>
-    <Button onClick={() => history.push('/store')} variant="outlined">Gå till Handla!</Button> 
-    <Button onClick={() => history.push('/')} variant="outlined">Back to Start</Button>
+    <Box style={{display: "flex", justifyContent: "space-evenly" }}>
+      <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
+      <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
+    </Box>
     
       
     </Container>

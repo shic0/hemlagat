@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { ListItemIcon, Box, Link, Grid, Typography } from "@material-ui/core"; 
+import { ListItemIcon, Box, Link, Grid, Typography, Container } from "@material-ui/core"; 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -8,8 +8,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 const Footer = () => {
   return (
     <>
-  
-    <Box bgcolor="#3f83ba" color="white" spacing={1} marginTop="30px" textAlign="center">
+  <Container>
+
+    <Box  bgcolor="#3f83ba" color="white" spacing={1} marginTop="30px" textAlign="center">
         <Grid container sparing ={5}>
           <Grid my="3px" item xs= {12} sm= {4}>
             <Box pt="10px" color="silver"><Typography>Hjälp</Typography></Box>
@@ -93,6 +94,7 @@ const Footer = () => {
         
       </Box>
     </Box>
+  </Container>
  
      </>
   )
