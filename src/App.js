@@ -15,11 +15,7 @@ import Policy from './components/Policy.js';
 import Terms from './components/Terms.js';
 import Footer from './components/Footer.js';
 import StartPage from './components/StartPage.js';
-import Cookies from './components/Cookies.js';
-import InfoAlert from './components/InfoAlert';
 import ErrorPage from './components/Error404';
-/* import MoreInfo from './components/MoreInfo'; */
-
 
 
 function App() {
@@ -32,9 +28,6 @@ function App() {
   return (
     <Router>
       <Header />
-      <InfoAlert/>
-      <Cookies />
-    {/*   <MoreInfo /> */}
       <Switch>
         <Route path="/cart" exact>
           <Cart />
