@@ -4,11 +4,15 @@ import olives from './img/olives.jpeg'
 import fisk from './img/fisk.jpg'
 import pannbiff from './img/pannbiff.jpg'
 import salat from './img/salat.jpg'
+import Cookies from './Cookies.js'
+import InfoAlert from './InfoAlert.js'
 
 const StartPage = () => {
 
   return (
     <>
+    <InfoAlert/>
+    <Cookies />
   <Container sx={{padding:'0', mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
     <Box spacing={1} marginTop="30px" textAlign="center">
       <Typography variant= "h3">

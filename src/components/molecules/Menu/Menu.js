@@ -12,7 +12,7 @@ const Header = () => {
   const numberOfProducts = useSelector((state) => state.cart.length);
   const history = useHistory()
   return (
-  <Container style={{ marginTop: '1rem', marginBottom: '1rem'}}>
+  <Container style={{ marginBottom: '80px', marginTop: '1rem', marginBottom: '1rem'}}>
     <AppBar position="fixed">
         <Toolbar>
             <Link to="/"><img className='logo' src={logo} alt="Logo" /></Link>
