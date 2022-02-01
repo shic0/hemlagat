@@ -12,9 +12,11 @@ const Support = () => {
         <Typography variant= "h3">
           Support
         </Typography>
-        <Typography variant="body1">Vill du ha hjälp med en order?
+        <Typography variant="body1">Behöver du hjälp med en order, eller anda funderingar?
         Här kan du snabbt få hjälp med alla dina frågor och funderingar</Typography>
-      {/* <img className='' src={} alt="" /> */}
+        <Typography>
+        
+        </Typography>
       </Box>
       <Box spacing={1} marginTop="30px" textAlign="center">
         <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 

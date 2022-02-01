@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
   
-    <Box bgcolor="blue" color="white" spacing={1} marginTop="30px" textAlign="center">
+    <Box bgcolor="#3f83ba" color="white" spacing={1} marginTop="30px" textAlign="center">
         <Grid container sparing ={5}>
           <Grid my="3px" item xs= {12} sm= {4}>
             <Box pt="10px" color="silver"><Typography>Hjälp</Typography></Box>
@@ -75,10 +75,10 @@ const Footer = () => {
             </Box>
             <Box marginTop="3px">
                 <ListItemIcon>
-                  <Link href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /> </Link>
+                  <Link color="white" href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /></Link>
                 </ListItemIcon>
                 <ListItemIcon>
-                  <Link href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Link>
+                  <Link color="white" href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Link>
                 </ListItemIcon>
             </Box>
           </Grid>
