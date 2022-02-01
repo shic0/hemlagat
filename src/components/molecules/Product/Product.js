@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import style from './Product.module.scss';
 import CartButton from '../../atoms/CartButton/CartButton';
 import { addToCart } from '../../../store/actions/cartActions';
-import { Container, ListItemIcon, Box, Link, Grid, Typography, Button} from "@material-ui/core"; 
+import { Button} from "@material-ui/core"; 
 import { useHistory } from 'react-router-dom'
 
 const Product = ({ product }) => {
@@ -15,7 +15,7 @@ const Product = ({ product }) => {
   return (
     
     <div className={style.product}>
-      <h3>
+      <h3 className={style.name}>
         {id}. {name}
       </h3>
       <img className={style.img} src={image} alt={name} />

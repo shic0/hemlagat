@@ -11,12 +11,14 @@
   border: 2px solid rgb(187, 179, 179);
   border-radius: 35px;
   padding:20px;
+  min-width: 310px;
 }
 
 .description {
   margin-bottom: 10px;
   color: rgb(33, 61, 30);
   width: 250px;
+  text-align: center;
 }
 
 .img {
@@ -25,5 +27,9 @@
   height: 250px;
   margin-bottom: 25px;
   object-fit: cover;
-  box-shadow: 10px 10px 5px 12px grey
+  box-shadow: 10px 10px 5px 5px grey
+}
+
+.name {
+  text-align: center;
 }
