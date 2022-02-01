@@ -9,9 +9,9 @@ const StartPage = () => {
 
   return (
     <>
-     <Container sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+  <Container sx={{padding:'0', mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
     <Box spacing={1} marginTop="30px" textAlign="center">
-       <Typography variant= "h3">
+      <Typography variant= "h3">
         Veckans Erbjudanden
       </Typography>
       <Box display="flex" justifyContent="center"  flexDirection="column" item xs= {12} sm= {4}>
@@ -49,7 +49,7 @@ const StartPage = () => {
       </Grid>
       </Box>
     </Box>
-    </Container>
+  </Container>
   </>
   )
 }
