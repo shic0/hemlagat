@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { ListItemIcon, Box, Link, Grid, Typography, Container } from "@material-ui/core"; 
+import { ListItemIcon, Box, Link, Grid, Typography } from "@material-ui/core"; 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -94,7 +94,6 @@ const Footer = () => {
         
       </Box>
     </Box>
-  </Container>
  
      </>
   )
