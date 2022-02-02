@@ -1,6 +1,5 @@
-import React from 'react'
-/* import { useHistory } from 'react-router-dom' */
-import { Container, ListItemIcon, Box, Link, Grid, Typography } from "@material-ui/core"; 
+import React from 'react'; 
+import { ListItemIcon, Box, Link, Grid, Typography } from "@material-ui/core"; 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -9,11 +8,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 const Footer = () => {
   return (
     <>
-  <Container sx={{ mt: '1rem', maxWidth: '100vw'}}>
-    <Box spacing={1} marginTop="30px" textAlign="center">
+  
+    <Box bgcolor="#3f83ba" color="white" spacing={1} marginTop="30px" textAlign="center">
         <Grid container sparing ={5}>
-          <Grid mt="2px" item xs= {12} sm= {4}>
-            <Box color="silver"><Typography>Hjälp</Typography></Box>
+          <Grid my="3px" item xs= {12} sm= {4}>
+            <Box pt="10px" color="silver"><Typography>Hjälp</Typography></Box>
             <Box>
               <Link underline="hover" href="./support" color="inherit">
               <Typography>Support</Typography>
@@ -30,13 +29,14 @@ const Footer = () => {
               </Link>
             </Box>
             <Box>
-              <Link underline="hover" href="./contact" color="inherit">
-                <Typography>Kontakt</Typography> 
-              </Link> 
+              <Link underline="hover" href="./cookies" color="inherit">
+              <Typography></Typography>
+              </Link>
             </Box>
+            
           </Grid>
           <Grid mt="2px" item xs= {12} sm= {4}>
-            <Box color="silver" ><Typography>Ditt Konto</Typography></Box>
+          <Box pt="10px" color="silver"><Typography>Ditt Konto</Typography></Box>
             <Box>
               <Link underline="hover" href="/" color="inherit">
               <Typography>Logga In</Typography>
@@ -54,11 +54,11 @@ const Footer = () => {
             </Box>
           </Grid>
           
-          <Grid mt="2px" item xs= {12} sm= {4}>
-            <Box color="silver">
+          <Grid my="2px" item xs= {12} sm= {4}>
+          <Box pt="10px" color="silver">
               <Typography>Besök oss på HEMLAGAT</Typography>
             </Box>
-            <Box>
+            <Box fontWeight={'bold'}>
             <Typography>
                 Öppettider: 10.30 - 22.00 
                 </Typography>
@@ -68,29 +68,32 @@ const Footer = () => {
                 </Typography>
               </Link>
             </Box>
-            <Box >
+            <Box>
+              <Link underline="hover" href="./contact" color="inherit">
+                <Typography>Kontakt</Typography> 
+              </Link> 
+            </Box>
+            <Box marginTop="3px">
                 <ListItemIcon>
-                  <Link  href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /> </Link>
+                  <Link color="white" href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /></Link>
                 </ListItemIcon>
                 <ListItemIcon>
-                  <Link href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Link>
+                  <Link color="white" href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Link>
                 </ListItemIcon>
             </Box>
           </Grid>
         </Grid>
-        <Box textAlign="center" bgcolor="black" color="white" marginTop="10px" marginBottom="15px">
-         <Typography variant="body2" padding="2px">
+      <Box textAlign="center" bgcolor="black" color="white" marginTop="10px" mx={0}>
+        <Typography variant="body2">
          Genom användandet av denna sida godkännas villkor och integritetspolicy
-         </Typography>
-         <Typography variant="body2">
-         Alla Rättigheter Reserverad
-         </Typography>
-         <Typography variant="body2">
-         Hemlagat © Copyright 2022 
         </Typography>
+        <Typography variant="body2">
+         Alla Rättigheter Reserverade Hemlagat © Copyright 2022 
+        </Typography>
+        
       </Box>
     </Box>
-  </Container> 
+ 
      </>
   )
 }

@@ -9,8 +9,8 @@ const Contact = () => {
   const history = useHistory()
   return (
     <>
-  <Container sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
-    <Box spacing={1} marginTop="30px" textAlign="center">
+  <Container class="padding" sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+    <Box spacing={1} textAlign="center">
        <Typography variant= "h3">
         Kontakt
       </Typography>
