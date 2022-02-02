@@ -6,12 +6,14 @@ const Policy = () => {
     const history = useHistory()
     return (
       <>
-    <Container style={{ mt: '1rem', maxWidth: '100vw', minHeight: '500px'}}>
-      <Box spacing={1} marginTop="30px" textAlign="center">
+
+    <Container class="padding" sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+      <Box spacing={1} textAlign="center">
+
         <Typography variant= "h3">
           Integritetspolicy
         </Typography>
-        <Typography variant="body1">
+        <Typography class="padding" variant="body1">
           Våra policy är 100 % nöjd kund!
         </Typography>
       </Box>
