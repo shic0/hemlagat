@@ -17,14 +17,14 @@ const Success = () => {
   return (
     <>
       {id && amount && from === 'checkout' ? (
-        <div className="container">
+        <div className="container" class="padding">
           <h1>Grattis!</h1>
           <h3>Din betalning är bekräftad!</h3>
           <div>
             <strong>Betalning id är:</strong> {id}
           </div>
           <div>
-            <strong>Du har betald:</strong> {amount / 100} SEK
+            <strong>Du har betalat:</strong> {amount / 100} SEK
           </div>
         </div>
       ) : (

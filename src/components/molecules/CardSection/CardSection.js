@@ -31,10 +31,10 @@ function CardSection({ isSubmitting, stripe, error, handleChange }) {
   const total = useSelector((state) => state.cart.total);
 
   return (
-    <div className="cardSection">
-     
+  <div className="container" class="padding">
+    <div className="cardSection"> 
       <label>
-        Kort nummer
+        Kortnummer
         <CardNumberElement
           options={CARD_ELEMENT_OPTIONS}
           onChange={handleChange}
@@ -59,6 +59,7 @@ function CardSection({ isSubmitting, stripe, error, handleChange }) {
       </button>
       {error && <span className="error">{error}</span>}
     </div>
+   </div> 
   );
 }
 

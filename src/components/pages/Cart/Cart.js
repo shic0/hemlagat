@@ -11,7 +11,7 @@ const Cart = () => {
   const dispatch = useDispatch();
   //console.log(cart.products[0])
   return (
-    <div className="container">
+    <div className="container" class="padding paddingx">
       <h1>Varukorg lista</h1>
 
       {!cart.length ? (
