@@ -19,6 +19,7 @@ const Support = () => {
         Snart kommer du kunna nå oss på livechatten, där du kommer kunna modifiera, önska och tipsa om din favorit rätt.
         </Typography>
       </Box>
+        </Container>
       <Box spacing={1} marginTop="300px" textAlign="center">
         <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
         <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
