@@ -28,6 +28,7 @@ const Products = () => {
 
   return (
     <>
+        <div className="container" class="padding paddingx">
           <div className={styles.products}>
            {
               allCategories.map(category => (
@@ -53,7 +54,7 @@ const Products = () => {
                     ))}
                 </div> */}
                 {/* ---------------------------------------------------- */}
-
+        </div>
     </>
   );
 };

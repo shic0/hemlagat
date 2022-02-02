@@ -115,7 +115,8 @@ const Billing = () => {
   };
 
   return (
-    <Formik
+    
+    <Formik 
       initialValues={checkoutInitialValues}
       validate={(values) => validate(checkoutRules, values)}
       onSubmit={onSubmit}
@@ -124,7 +125,7 @@ const Billing = () => {
         // isSubmitting Returnerar true om submission är pågår
         // stripe.confirmCardPayment kan ta några sekunder. under tider det ska vara disable "Submitting..." medellande
         // https://jaredpalmer.com/formik/docs/api/formik#issubmitting-boolean    här källor
-        <Form>
+        <Form className="container"  alignItems="center">
           <div className={style.wrapBillingAndCardSection}>
             <div>
               <Input

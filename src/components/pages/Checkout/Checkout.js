@@ -3,7 +3,7 @@ import Billing from '../../organisms/Billing/Billing';
 
 const Checkout = () => {
   return (
-    <div className="container">
+    <div className="container" class="padding">
       <h1>Ange er uppgifter samt leveransadress</h1>
 
       <Billing />
