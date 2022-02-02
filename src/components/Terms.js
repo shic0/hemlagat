@@ -17,7 +17,6 @@ const history = useHistory()
               Annars bjuder vi på maten!
           </Typography>
         </Box>
-
         <Box spacing={1} marginTop="30px" textAlign="center">
           <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
           <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
