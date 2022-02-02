@@ -30,13 +30,13 @@ const Contact = () => {
       <Box marginTop="30px">
         <img className='karta' src={karta} alt="Karta" />
       </Box>
-      <Box>
+      <Box marginBottom="30px">
         <Typography>
         Argongatan 2B, Mölndal
         </Typography>
       </Box>
     </Box>
-    <Box spacing={1} marginTop="30px" textAlign="center">
+    <Box style={{display: "flex", justifyContent: "space-evenly" }}>
       <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
       <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
     </Box>

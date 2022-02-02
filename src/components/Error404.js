@@ -18,8 +18,7 @@ const ErrorPage = () => {
         <Typography>+46 (0) 70 77 26 830</Typography>
         <Typography margin="100px">kundservice@hemlagat-mat.se</Typography>
       </Box>
-    
-      
+     
     </Container>
     </>
   )
