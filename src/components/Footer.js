@@ -8,9 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 const Footer = () => {
   return (
     <>
-  <Container>
-
-    <Box  bgcolor="#3f83ba" color="white" spacing={1} marginTop="30px" textAlign="center">
+    <Box bgcolor="#3f83ba" color="white" spacing={1} marginTop="30px" textAlign="center">
         <Grid container sparing ={5}>
           <Grid my="3px" item xs= {12} sm= {4}>
             <Box pt="10px" color="silver"><Typography>Hjälp</Typography></Box>
@@ -68,11 +66,6 @@ const Footer = () => {
                 Argongatan 2B, Mölndal
                 </Typography>
               </Link>
-            </Box>
-            <Box>
-              <Link underline="hover" href="./contact" color="inherit">
-                <Typography>Kontakt</Typography> 
-              </Link> 
             </Box>
             <Box marginTop="3px">
                 <ListItemIcon>
