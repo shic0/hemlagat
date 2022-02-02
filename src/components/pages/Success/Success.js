@@ -17,7 +17,7 @@ const Success = () => {
   return (
     <>
       {id && amount && from === 'checkout' ? (
-        <div className="container">
+        <div className="container_success">
           <h1>Grattis!</h1>
           <h3>Din betalning är bekräftad!</h3>
           <div>
