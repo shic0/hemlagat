@@ -20,7 +20,7 @@ const history = useHistory()
       <Typography>tjugo hungriga medarbetare eller om du bara vill ha lite kvällsmat i slutet av veckan till dig själv.</Typography> 
       <Typography>Vi serverar högsta tänkbara kvalité till lägsta tänkbara pris</Typography>
     </Box>
-    <Box spacing={1} marginTop="30px" textAlign="center">
+    <Box style={{display: "flex", justifyContent: "space-evenly" }}>
       <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
       <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
     </Box>

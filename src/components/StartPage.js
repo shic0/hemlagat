@@ -3,6 +3,7 @@ import { Button, Container, Box, Grid, Typography } from "@material-ui/core";
 import olives from './img/olives.jpeg'
 import fisk from './img/fisk.jpg'
 import pannbiff from './img/pannbiff.jpg'
+
 import Cookies from './Cookies.js'
 import InfoAlert from './InfoAlert.js'
 import { useHistory } from 'react-router-dom'
@@ -11,6 +12,7 @@ const StartPage = () => {
 const history = useHistory()
   return (
     <>
+
   <InfoAlert />
     <Cookies />
       <Container sx={{padding:'0', mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
@@ -34,7 +36,6 @@ const history = useHistory()
                 <Typography style={{ color: 'red' }}>20 SEK</Typography>
               </Box>
             </Box>
-
             
             <Box margin="20px" item xs= {12} sm= {4}>
               <img className='olives' src={pannbiff} alt="pannbiff" />
@@ -56,6 +57,7 @@ const history = useHistory()
         <Box spacing={1} marginTop="30px" textAlign="center">
           <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
         </Box>
+
       </Container>
   </>
   )
