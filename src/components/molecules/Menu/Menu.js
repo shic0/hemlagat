@@ -12,12 +12,12 @@ const Header = () => {
   const numberOfProducts = useSelector((state) => state.cart.length);
   const history = useHistory()
   return (
-  <Container style={{ marginTop: '1rem', marginBottom: '1rem'}}>
-    <AppBar position="fixed">
-        <Toolbar>
+  <Container style={{ marginTop: '0', marginBottom: '1rem' }}>
+    <AppBar position= "static">
+        <Toolbar >
             <Link to="/"><img className='logo' src={logo} alt="Logo" /></Link>
             <div className='nav'>
-                <Link style={{ color: 'white', textDecoration: 'none' }} to="/store"><span role="img" aria-label="sheep">Butik</span></Link>
+                <Link style={{ color: 'white', textDecoration: 'none' }} to="/store"><span role="img" aria-label="sheep">MENY</span></Link>
                 <Link style={{ color: 'white', textDecoration: 'none' }} to="/contact"><span role="img" aria-label="sheep">Kontakt</span></Link>
                 <Link style={{ color: 'white', textDecoration: 'none' }} to="/about"><span role="img" aria-label="sheep">Om oss</span></Link>
             </div>

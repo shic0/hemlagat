@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { ListItemIcon, Box, Link, Grid, Typography } from "@material-ui/core"; 
+import { ListItemIcon, Box, Link, Grid, Typography, Container } from "@material-ui/core"; 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -8,6 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 const Footer = () => {
   return (
     <>
+
   
     <Box bgcolor="#3f83ba" color="white" spacing={1} marginTop="30px" textAlign="center">
         <Grid container sparing ={5}>
@@ -68,11 +69,11 @@ const Footer = () => {
                 </Typography>
               </Link>
             </Box>
-            <Box>
+           {/*  <Box>
               <Link underline="hover" href="./contact" color="inherit">
                 <Typography>Kontakt</Typography> 
               </Link> 
-            </Box>
+            </Box> */}
             <Box marginTop="3px">
                 <ListItemIcon>
                   <Link color="white" href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /></Link>
@@ -93,6 +94,7 @@ const Footer = () => {
         
       </Box>
     </Box>
+  </Container>
  
      </>
   )
