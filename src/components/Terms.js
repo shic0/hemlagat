@@ -11,13 +11,13 @@ const history = useHistory()
         <Typography variant= "h3">
           Köpvillkor
         </Typography>
-          <Typography class="padding" variant="body1">
-              Nöjdkund garanti - leverans inom 30 min inom Mölndal
-          </Typography>
+          <Typography variant="body1">
+              Nöjdkund garanti - leverans inom 30 min inom Mölndals kommun</Typography>
           <Typography variant="body1">
               Annars bjuder vi på maten!
           </Typography>
         </Box>
+
         <Box spacing={1} marginTop="30px" textAlign="center">
           <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
           <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>

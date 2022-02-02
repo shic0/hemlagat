@@ -1,17 +1,17 @@
 import React from 'react'
-import { Container, Box, Grid, Typography } from "@material-ui/core"; 
+import { Button, Container, Box, Grid, Typography } from "@material-ui/core"; 
 import olives from './img/olives.jpeg'
 import fisk from './img/fisk.jpg'
 import pannbiff from './img/pannbiff.jpg'
-import salat from './img/salat.jpg'
 import Cookies from './Cookies.js'
 import InfoAlert from './InfoAlert.js'
+import { useHistory } from 'react-router-dom'
 
 const StartPage = () => {
-
+const history = useHistory()
   return (
     <>
-  <InfoAlert/>
+  <InfoAlert />
     <Cookies />
       <Container sx={{padding:'0', mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
         <Box spacing={1} marginTop="30px" marginX="20px" textAlign="center">
@@ -19,7 +19,7 @@ const StartPage = () => {
             Veckans Erbjudanden
           </Typography>
           <Box display="flex" justifyContent="center"  flexDirection="column" item xs= {12} sm= {4}>
-          <Grid display="flex" justifyContent="center" mt="20px" mx="120px" container spacing={4}>
+          <Grid display="flex" justifyContent="center" mt="20px" container spacing={4}>
             <Box margin="20px" item xs= {12} sm= {4}>
               <img className='olives' src={fisk} alt="fisk" />
               <Box style={{ textAlign: 'center' }}>
@@ -43,15 +43,18 @@ const StartPage = () => {
                 <Typography style={{ color: 'red' }}>59 SEK</Typography>
               </Box>
             </Box>
-            <Box margin="20px" item xs= {12} sm= {4}>
+           {/*  <Box margin="20px" item xs= {12} sm= {4}>
               <img className='olives' src={salat} alt="sallad" />
-              <Box style={{ textAlign: 'center' }}>
+              {/* <Box style={{ textAlign: 'center' }}>
                 <Typography>Sallad</Typography>
                 <Typography style={{ color: 'red' }}>59 SEK</Typography>
               </Box>
-            </Box>
+            </Box> */}
           </Grid>
           </Box>
+        </Box>
+        <Box spacing={1} marginTop="30px" textAlign="center">
+          <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
         </Box>
       </Container>
   </>

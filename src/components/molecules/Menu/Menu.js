@@ -17,7 +17,7 @@ const Header = () => {
         <Toolbar>
             <Link to="/"><img className='logo' src={logo} alt="Logo" /></Link>
             <div className='nav'>
-                <Link style={{ color: 'white', textDecoration: 'none' }} to="/store"><span role="img" aria-label="sheep">Butik</span></Link>
+                <Link style={{ color: 'white', textDecoration: 'none' }} to="/store"><span role="img" aria-label="sheep">MENY</span></Link>
                 <Link style={{ color: 'white', textDecoration: 'none' }} to="/contact"><span role="img" aria-label="sheep">Kontakt</span></Link>
                 <Link style={{ color: 'white', textDecoration: 'none' }} to="/about"><span role="img" aria-label="sheep">Om oss</span></Link>
             </div>

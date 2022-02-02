@@ -68,11 +68,11 @@ const Footer = () => {
                 </Typography>
               </Link>
             </Box>
-            <Box>
+           {/*  <Box>
               <Link underline="hover" href="./contact" color="inherit">
                 <Typography>Kontakt</Typography> 
               </Link> 
-            </Box>
+            </Box> */}
             <Box marginTop="3px">
                 <ListItemIcon>
                   <Link color="white" href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /></Link>
