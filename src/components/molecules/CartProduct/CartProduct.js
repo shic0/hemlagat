@@ -19,7 +19,6 @@ const CartProduct = ({ product }) => {
       <div className={style.nameAndImage}>
         <img src={image} alt={name} width="100" height="100" />
         <h4>{name}</h4>
-        {/* <code>{description}</code> */}
       </div>
       <div className="actionables">
         <CartButton

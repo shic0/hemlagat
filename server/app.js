@@ -13,8 +13,6 @@ const app = express();
 app.use(logger('../public'));
 app.use(
   express.json({
-    // We need the raw body to verify webhook signatures.
-    // Let's compute it only when hitting the Stripe webhook endpoint.
     verify: function(req, res, buf) {
       if (req.originalUrl.includes('/webhook')) {
         req.rawBody = buf.toString();
@@ -55,20 +53,6 @@ app.use(bodyParser.json());
 
 app.use('/products', productsRouter);
 app.use('/payment', paymentRouter);
-
-/* // ---------------- publish ----------------
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'build')));
-
-// The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/build/index.html'));
-});
-// --------------------------------
- */
-
-// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });

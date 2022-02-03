@@ -3,14 +3,10 @@ import { ListItemIcon, Box, Link, Grid, Typography } from "@material-ui/core";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-
-
 const Footer = () => {
   return (
     <>
-
-  
-    <Box bgcolor="#3f83ba" color="white" spacing={1} marginTop="30px" textAlign="center">
+      <Box className="footer" spacing={1} >
         <Grid container sparing ={5}>
           <Grid my="3px" item xs= {12} sm= {4}>
             <Box pt="10px" color="silver"><Typography>Hjälp</Typography></Box>
@@ -34,7 +30,6 @@ const Footer = () => {
               <Typography></Typography>
               </Link>
             </Box>
-            
           </Grid>
           <Grid mt="2px" item xs= {12} sm= {4}>
           <Box pt="10px" color="silver"><Typography>Ditt Konto</Typography></Box>
@@ -69,17 +64,12 @@ const Footer = () => {
                 </Typography>
               </Link>
             </Box>
-           {/*  <Box>
-              <Link underline="hover" href="./contact" color="inherit">
-                <Typography>Kontakt</Typography> 
-              </Link> 
-            </Box> */}
             <Box marginTop="3px">
                 <ListItemIcon>
-                  <Link color="white" href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /></Link>
+                  <Link color="inherit" href="https://www.facebook.com/Hemlagat-107368028494671"><FacebookIcon /></Link>
                 </ListItemIcon>
                 <ListItemIcon>
-                  <Link color="white" href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Link>
+                  <Link color="inherit" href="https://www.instagram.com/_hemlagat_/"><InstagramIcon /></Link>
                 </ListItemIcon>
             </Box>
           </Grid>
@@ -91,7 +81,6 @@ const Footer = () => {
         <Typography variant="body2">
          Alla Rättigheter Reserverade Hemlagat © Copyright 2022 
         </Typography>
-        
       </Box>
     </Box>
  

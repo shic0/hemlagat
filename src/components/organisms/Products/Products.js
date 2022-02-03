@@ -15,45 +15,32 @@ const Products = () => {
       const { data } = await Axios.get('https://hemlagat.herokuapp.com/products');
       setProducts(data.products);
     };
-
     getData();
   }, []);
-  //console.log(product)
   
   const allCategories = [
     'Alla',
     ...new Set(products.map(product => product.category)),
   ];
-  //console.log(allCategories);
 
   return (
     <>
-        <div className="container" class="padding paddingx">
+        <div className="padding">
           <div className={styles.products}>
            {
               allCategories.map(category => (
-                  <Button  onClick={() => handleClick(category)} key={category}  style={{ margin: '5px' }}>
+                  <Button onClick={() => handleClick(category)} key={category}  style={{ margin: '0px' }}>
                       {category}
                   </Button>))
               }
-              
               {
               products.filter(product => selectedCategory==="Alla" || product.category===selectedCategory)
                 .map(product => (
                   <div className={styles.products} key={product.id} sm={12} md={6} lg={4} xl={3}>
-                        <Product product={product} />
-                        
+                        <Product product={product} />       
                     </div>))
                 }
-                
                 </div>
-                {/* ----------------Printa alla produkter---------------- */}
-                  {/*   <div className={styles.products}>
-                  {products.map((product) => (
-                    <Product key={product.category} product={product} />
-                    ))}
-                </div> */}
-                {/* ---------------------------------------------------- */}
         </div>
     </>
   );
