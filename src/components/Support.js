@@ -23,6 +23,7 @@ const Support = () => {
         <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
         <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
       </Box>
+    </Container>
     </>
   )
 }
