@@ -36,7 +36,7 @@ const Contact = () => {
         </Typography>
       </Box>
     </Box>
-    <Box style={{display: "flex", justifyContent: "space-evenly" }}>
+    <Box style={{display: "flex", justifyContent: "center", margin:"20px"}}>
       <Button onClick={() => history.push('/store')} variant="outlined">Gå till Menyn!</Button> 
       <Button onClick={() => history.push('/')} variant="outlined">Veckans Erbjudanden</Button>
     </Box>

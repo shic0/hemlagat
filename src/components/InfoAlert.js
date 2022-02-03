@@ -6,7 +6,7 @@ export default function InfoAlerts() {
   const [open, setOpen] = React.useState(true);
 
   return (
-    <Box mt="80px" sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%' }}>
       <Collapse in={open}>
         <Alert
           action={

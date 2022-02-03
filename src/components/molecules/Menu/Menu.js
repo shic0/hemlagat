@@ -12,7 +12,7 @@ const Header = () => {
   const numberOfProducts = useSelector((state) => state.cart.length);
   const history = useHistory()
   return (
-  <Container style={{ marginTop: '0', marginBottom: '1rem' }}>
+  
     <AppBar position= "static">
         <Toolbar >
             <Link to="/"><img className='logo' src={logo} alt="Logo" /></Link>
@@ -22,14 +22,12 @@ const Header = () => {
                 <Link style={{ color: 'white', textDecoration: 'none' }} to="/about"><span role="img" aria-label="sheep">Om oss</span></Link>
             </div>
             <Box>
-            <Button  style={{ color: 'white', backgroundColor: 'skyblue', textDecoration: 'none' }} onClick={() => history.push('/cart')} variant="outlined"><span role="img" aria-label="sheep">🛒{numberOfProducts}</span></Button> 
-{/*               <Link variant="outlined" style={{ color: 'white', textDecoration: 'none' }} to="/cart"><span role="img" aria-label="sheep">🛒{numberOfProducts}</span></Link>
- */}            </Box>
+              <Button  style={{ color: 'white', backgroundColor: 'skyblue', textDecoration: 'none' }} onClick={() => history.push('/cart')} variant="outlined"><span role="img" aria-label="sheep">🛒{numberOfProducts}</span></Button> 
+            </Box>
         </Toolbar>
        
     </AppBar>
   
-  </Container>
   );
 };
 
