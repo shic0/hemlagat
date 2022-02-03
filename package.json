@@ -30,6 +30,10 @@
     "reselect": "^4.0.0"
   },
   "proxy": "https://hemlagat.herokuapp.com",
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=10.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
