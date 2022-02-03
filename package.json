@@ -44,7 +44,7 @@
     "server": "npm start --prefix server",
     "client": "npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbild": "npm install --prefix server && npm run build"
+    "heroku-postbild": "npm install && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
