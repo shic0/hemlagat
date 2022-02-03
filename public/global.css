@@ -31,18 +31,17 @@
 }
 
 .footer {
-  position: absolute;
+  position: static;
   bottom: 0;
-  width: 100%;
-  background: #3b62b8;
-  padding: 2rem;
-  margin: 2rem;
+  background: #3f83ba;
+  margin-top: 30px;
+  color: white; 
+  text-align: center
 }
 
 .cookies {
   position: absolute;
   margin-top: 0;
-  max-width: 1250px;
   height: 20%;
   padding: 0;
 }

@@ -7,7 +7,7 @@ const AboutPage = () => {
 const history = useHistory()
   return (
     <>
-  <Container class="padding" sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+  <Container className="padding" sx={{ mt: '1rem', maxWidth: '100vw', minHeight: '500px' }}>
     <Box spacing={1} textAlign="center">
       <Box marginBottom={'20px'}>
         <Typography variant="h3">Om oss</Typography>

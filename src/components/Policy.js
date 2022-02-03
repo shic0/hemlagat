@@ -6,8 +6,7 @@ const Policy = () => {
     const history = useHistory()
     return (
       <>
-
-    <Container class="padding" sx={{ mt: '1rem', maxWidth: '100vw', minHeight: 'auto'}}>
+    <Container className="padding" style={{ mt: '1rem', maxWidth: '100vw', minHeight: '300px'}}>
       <Box spacing={1} textAlign="center">
         <Typography variant= "h3">
           Integritetspolicy

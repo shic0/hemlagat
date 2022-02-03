@@ -1,14 +1,12 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Box, Typography, Button, Container } from "@material-ui/core";
-
 
 const Support = () => {
   const history = useHistory()
   return (
     <>
-
-    <Container class="padding" sx={{ mt: '1rem', maxWidth: '100vw'}}>
+    <Container className="padding" style={{ mt: '1rem', maxWidth: '100vw', minHeight: '500px'}}>
       <Box spacing={1} textAlign="center">
         <Box marginBottom={'20px'}>
           <Typography variant= "h3">
@@ -20,7 +18,6 @@ const Support = () => {
         <Box spacing={1} marginTop="30px" textAlign="center" paddingY="88px">
           <Button onClick={() => history.push('/contact')} variant="outlined">Kontakta oss!</Button> 
         </Box>
-        
       </Box>
     </Container>
     

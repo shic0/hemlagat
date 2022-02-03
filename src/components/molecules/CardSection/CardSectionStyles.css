@@ -1,11 +1,3 @@
-/**
-* Shows how you can use CSS to style your Element's container.
-* These classes are added to your Stripe Element by default.
-* You can override these classNames by using the options passed
-* to the CardElement component.
-* https://stripe.com/docs/js/elements_object/create_element?type=card#elements_create-options-classes
-*/
-
 .StripeElement {
   height: 40px;
   padding: 10px 12px;

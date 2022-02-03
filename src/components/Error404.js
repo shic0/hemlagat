@@ -3,10 +3,9 @@ import { Box, Typography, Container } from "@material-ui/core";
 import error404 from './img/error404.jpg'
 
 const ErrorPage = () => {
-
   return (
     <>
-    <Container class="padding" >
+    <Container className="padding" style={{ minHeight: '500px' }}>
       <Box textAlign="center">
         <Typography variant= "h3">
           Tyvärr, sidan kan inte hittas!
@@ -18,7 +17,6 @@ const ErrorPage = () => {
         <Typography>+46 (0) 70 77 26 830</Typography>
         <Typography margin="100px">kundservice@hemlagat-mat.se</Typography>
       </Box>
-     
     </Container>
     </>
   )

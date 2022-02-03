@@ -5,10 +5,6 @@ const calculateTotal = require('../helpers/helper');
 
 const router = express.Router();
 
-/**
- * Create a payment intent, return a Client Secret
- * https://stripe.com/docs/api/payment_intents/object#payment_intent_object-client_secret
- */
 router.post('/secret', async (req, res) => {
   const { products, email } = req.body;
 
@@ -18,14 +14,10 @@ router.post('/secret', async (req, res) => {
       amount: calculateTotal(products) * 100 + 3900, 
       currency: 'sek',
       payment_method_types: ['card'],
-      receipt_email: email, // customer email, used for invoices and confirmations
+      receipt_email: email, 
       metadata: {
-        /** allows testing the integration
-        see https://stripe.com/docs/payments/
-        accept-a-payment#web-test-integration
-         */
+       
         integration_check: 'accept_a_payment',
-        // we can pass additional customer/order information. This is visible in your Stripe dashboard, under Metadata of a payment. See https://stripe.com/docs/api/metadata
         order_id: '6735'
       }
     });
@@ -37,23 +29,17 @@ router.post('/secret', async (req, res) => {
   }
 });
 
-/**
- * Use webhooks to respond to offline payment events.
- * https://stripe.com/docs/payments/handling-payment-events#build-your-own-webhook
- */
 router.post('/webhook', (req, res) => {
   let event;
 
   const signature = req.headers['stripe-signature'];
 
   try {
-    // Verify the events that Stripe sends to your webhook endpoints.
-    // See https://stripe.com/docs/webhooks/signatures
-    // and https://stripe.com/docs/payments/handling-payment-events#build-your-own-webhook
+   
     event = stripe.webhooks.constructEvent(
       req.rawBody,
       signature,
-      // Find your webhook secret when you run `stripe listen` (it starts with `whsec_`)
+      
       process.env.STRIPE_WEBHOOK_SECRET
     );
   } catch (err) {
@@ -61,10 +47,8 @@ router.post('/webhook', (req, res) => {
     return res.status(400);
   }
 
-  // Handle the event
   switch (event.type) {
     case 'payment_intent.succeeded':
-      // send an order confirmation email to your customer, log the sale in a database, or start a shipping workflow. You find the data response on  `event.data`
       console.log('PaymentIntent was successful!');
       break;
     case 'payment_intent.created':
@@ -83,11 +67,8 @@ router.post('/webhook', (req, res) => {
       console.log('Payment failed!');
       return res.status(400).end();
     default:
-      // Unexpected event type
       return res.status(400).end();
   }
-
-  // Return a 200 response to acknowledge receipt of the event
   return res.status(200).json({ received: true });
 });
 

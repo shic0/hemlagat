@@ -9,13 +9,12 @@ import { clearCart } from '../../../store/actions/cartActions';
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-  //console.log(cart.products[0])
   return (
-    <div className="container" class="padding paddingx">
+    <div className="container" style={{ minHeight: '500px', textAlign: 'center'  }}>
       <h1>Varukorg lista</h1>
 
       {!cart.length ? (
-        <div>Varukorg är tomt !</div>
+        <div>Varukorg är tom !</div>
       ) : (
         <>
           <div className={style.products}>
@@ -31,7 +30,6 @@ const Cart = () => {
                 onClick={() => dispatch(clearCart())}
               />
             </div>
-
             <div className={style.totals}>
               <h5>+ hemleverans avgift 39SEK tillkommer</h5>
               <div>Totalt summan att betala:  {cart.total + 39} SEK</div>

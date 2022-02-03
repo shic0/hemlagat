@@ -10,7 +10,6 @@ import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 const CARD_ELEMENT_OPTIONS = {
-  // Grabbar här ni kan hitta mer styling information :) https://stripe.com/docs/js/appendix/style
   style: {
     base: {
       fontSize: 16,
@@ -31,7 +30,7 @@ function CardSection({ isSubmitting, stripe, error, handleChange }) {
   const total = useSelector((state) => state.cart.total);
 
   return (
-  <div className="container" class="padding">
+  <div className="container padding">
     <div className="cardSection"> 
       <label>
         Kortnummer
