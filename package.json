@@ -2,10 +2,6 @@
   "name": "hemlagat",
   "version": "0.1.1",
   "description": "examenarbetet",
-  "engines": {
-    "npm": "6.14.14",
-    "node": "14.17.5"
-  },
   "homepage": "https://luxar.se",
   "private": true,
   "dependencies": {
