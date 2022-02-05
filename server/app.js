@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 
 const productsRouter = require('./routes/products');
 const paymentRouter = require('./routes/payment');
@@ -53,6 +54,9 @@ app.use(bodyParser.json());
 
 app.use('/products', productsRouter);
 app.use('/payment', paymentRouter);
+
+
+// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });

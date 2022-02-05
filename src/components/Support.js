@@ -20,7 +20,6 @@ const Support = () => {
         </Box>
       </Box>
     </Container>
-    
     </>
   )
 }
